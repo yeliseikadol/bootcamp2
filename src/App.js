@@ -254,23 +254,19 @@ function App() {
           <SectionHeader
             eyebrow='Результат'
             title='Продвинутое владение Фигмой и портфолио для работы'
-            text1='Про­грамма курса наце­лена на то, чтобы студенты смогли работать самостоятельно. Поэтому все упраж­не­ния, зада­ния и&nbsp;темы ориентированы больше на технические скиллы, а&nbsp;не&nbsp;на&nbsp;тео­рию и&nbsp;общую дизайнерскую обра­зо­ван­ность. Смотрите, какие работы создают наши уче­ники в&nbsp;конце курса:'
+            text1='Про­грамма курса наце­лена на то, чтобы студенты смогли работать самостоятельно. Поэтому все упраж­не­ния, зада­ния и&nbsp;темы ориентированы больше на технические скиллы, а&nbsp;не&nbsp;на&nbsp;тео­рию и&nbsp;общую дизайнерскую обра­зо­ван­ность. Смотрите, какие работы создают уче­ники наших преподавателей:'
             />
             <div className='cards-grid'>
               <div className='cards-row'>
-                <div className='card card-1-2'></div>
-                <div className='card card-2-1'></div>
+                <div className='card student student-1'></div>
+                <div className='card student student-2'></div>
               </div>
               <div className='cards-row'>
-                <div className='card'></div>
-                <div className='card'></div>
+                <div className='card student student-3'></div>
               </div>
               <div className='cards-row'>
-                <div className='card'></div>
-              </div>
-              <div className='cards-row'>
-                <div className='card card-1-2'></div>
-                <div className='card card-2-1'></div>
+                <div className='card student student-4'></div>
+                <div className='card student student-5'></div>
               </div>
             </div>
         </Section>
@@ -297,7 +293,7 @@ function App() {
               <div className='cards-grid'>
 
                 <div className='cards-row cards-row-tutor'>
-                  <div className='card card-2-1'></div>
+                  <a href='https://www.figma.com/community/file/1059862769821362327' className='card card-2-1 card-tutor-image card-tutor-yk1'>Перейти</a>
                   <div className='card card-tutor card-1-2'>
                     <div className='img avatar avatar-tutor avatar-kadol'></div>
                     <h4>Елисей Кадол</h4>
@@ -313,15 +309,15 @@ function App() {
                 </div>
 
                 <div className='cards-row'>
-                  <div className='card'></div>
-                  <div className='card'></div>
+                  <a href='https://www.behance.net/gallery/96745491/Doorbell-iOS-app' className='card card-tutor-image card-tutor-yk2'>Перейти</a>
+                  <a href='https://www.behance.net/gallery/133330937/Payflow-Payout-Service-for-Contributors' className='card card-tutor-image card-tutor-yk3'>Перейти</a>
                 </div>  
               </div> 
             </div>
             <div className='stack tutor-card'>
               <div className='cards-grid'>
                 <div className='cards-row cards-row-tutor'>
-                  <div className='card card-2-1'></div>
+                  <a href='https://www.behance.net/gallery/133269503/Homam-App' className='card card-2-1 card-tutor-image card-tutor-ov1'>Перейти</a>
                   <div className='card card-tutor card-1-2'>
                     <div className='img avatar avatar-tutor avatar-vorobey'></div>
                     <h4>Оксана Воробьёва</h4>
@@ -335,8 +331,8 @@ function App() {
                   </div> 
                 </div>
                 <div className='cards-row'>
-                  <div className='card'></div>
-                  <div className='card'></div>
+                  <a href='https://www.behance.net/gallery/129817183/RockID-App' className='card card-tutor-image card-tutor-ov2'>Перейти</a>
+                  <a href='https://www.behance.net/gallery/123414677/Fonts' className='card card-tutor-image card-tutor-ov3'>Перейти</a>
                 </div>  
               </div> 
             </div>
