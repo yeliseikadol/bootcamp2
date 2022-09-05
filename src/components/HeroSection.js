@@ -1,13 +1,11 @@
 import React from 'react'
-import titleVideo from '../assets/video/TitleVideo.mp4'
 import Button from './Button'
 import Section from './Section'
 import SectionHeader from './SectionHeader'
 import Tag from './Tag'
 
 export default function HeroSection() {
-
-    const Src = "../assets/video/TitleVideo.mp4"
+    const Src = "../titlevideo.mp4"
 
     var EmbedVideo = function(props) {
         return (
@@ -17,7 +15,6 @@ export default function HeroSection() {
                     muted
                     autoplay
                     playsinline
-                    class="${props.className}"
                     width="100%">
                     <source src=${Src} type="video/mp4" />
                     Sorry, your browser doesn't support videos.
@@ -29,7 +26,7 @@ export default function HeroSection() {
 
     return (
         <div className='title--section'>
-            <EmbedVideo src={titleVideo} className='video-div'/>
+            <EmbedVideo/>
             <Section>
                 <SectionHeader
                     eyebrow='Интенсивный курс'

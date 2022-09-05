@@ -23,7 +23,7 @@ export default function Form() {
             <div>1560 BYN</div>
         </div>
       </div>
-      <form className='stack'>
+      <form className='stack' name="contact" method="POST" data-netlify="true">
         <div className='row phone-input'>
             <div className='prefix'>+375</div>
             <input
