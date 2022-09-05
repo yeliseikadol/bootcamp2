@@ -25,34 +25,40 @@ export default function HeroSection() {
     }
 
     return (
-        <div className='title--section'>
-            <EmbedVideo/>
-            <Section>
-                <SectionHeader
-                    eyebrow='Интенсивный курс'
-                    title='Ваша карьера UX/UI-дизайнера начинается здесь'
-                >
-                <div className="tag-rows-stack">
-                    <div className='tag-row'>
-                        <Tag>Онлайн</Tag>
-                        <Tag>10&nbsp;недель</Tag>
-                        <Tag>Сертификат IBM</Tag>
-                    </div>
-                    <div className='tag-row'>
-                        <Tag>Сообщество</Tag>
-                        <Tag>Помощь в поиске работы</Tag>
-                    </div>
-                </div>
-                </SectionHeader>
-                    
-                <div className='row button-bar'>
-                    <Button>Поступить</Button>
-                    <div className='stack'>
-                        <h4>1560 BYN</h4>
-                        <div className="text--small">или 560 BYN в месяц</div>
-                    </div>
+
+            <Section className='title-section'>
+
+                <EmbedVideo/>
+
+                <div className='title-section-card'>
+
+                        <div className='title-section-card-form stack'>
+                            <div className='title-section-card-form-text stack'>
+                                <SectionHeader
+                                    eyebrow='Интенсивный курс'
+                                    title='UX/UI-дизайнер с&nbsp;нуля'
+                                />
+                                <div className="tag-rows-stack">
+                                    <div className='tag-row'>
+                                        <Tag>Онлайн</Tag>
+                                        <Tag>10&nbsp;недель</Tag>
+                                        <Tag>Сертификат IBM</Tag>
+                                    </div>
+                                    <div className='tag-row'>
+                                        <Tag>Сообщество</Tag>
+                                        <Tag>Помощь в&nbsp;поиске работы</Tag>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='row button-bar'>
+                                <Button>Поступить</Button>
+                                <div className='stack'>
+                                    <h4>1560&nbsp;BYN</h4>
+                                    <div className="text--small">или 560&nbsp;BYN в&nbsp;месяц</div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </Section>
-      </div>
     )
 }
