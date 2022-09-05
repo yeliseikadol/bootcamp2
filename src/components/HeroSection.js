@@ -5,7 +5,7 @@ import SectionHeader from './SectionHeader'
 import Tag from './Tag'
 
 export default function HeroSection() {
-    const Src = "../titlevideo-2.mp4"
+    const Src = "../titlevideo.webm"
 
     var EmbedVideo = function(props) {
         return (
