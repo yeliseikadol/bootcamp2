@@ -5,7 +5,8 @@ import SectionHeader from './SectionHeader'
 import Tag from './Tag'
 
 export default function HeroSection() {
-    const Src = "../titlevideo.webm"
+    const SrcWebm = "../titlevideo.webm"
+    const SrcM4 = "../titlevideo-2.mp4"
 
     var EmbedVideo = function(props) {
         return (
@@ -16,7 +17,8 @@ export default function HeroSection() {
                     autoplay
                     playsinline
                     width="100%">
-                    <source src=${Src} type="video/mp4" />
+                    <source src=${SrcM4} type="video/mp4" />
+                    <source src=${SrcWebm} type="video/webm" />
                     Sorry, your browser doesn't support videos.
                 </video>
                 
