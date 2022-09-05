@@ -652,6 +652,9 @@ ul
     margin-bottom: -8px
 
 
+
+
+
 .card-tutor-image
     color: transparent
     text-align: right
@@ -670,8 +673,6 @@ ul
     background-image: url('../assets/images/student4.jpg')
 .student-5
     background-image: url('../assets/images/student5.jpg')
-
-
 .card-tutor-yk1
     background-image: url('../assets/images/yk1.jpg')
 .card-tutor-yk2
@@ -713,9 +714,7 @@ ul
 
 @media screen and (max-width: 1000px)
     .cards-row
-        display: block
-    .cards-row > * + *
-        margin-top: 32px
+        gap: 16px
     .card
         height: auto
         width: 100%
@@ -776,15 +775,11 @@ ul
         padding: 24px 0
     .process-books .books-img
         flex-basis: auto
-    .cards-row > * + *
-        margin-top: 16px
     .cards-grid
         gap: 16px
     .certificate-row
         gap: 16px
-    .cards-row-tutor
-        display: flex
-        flex-direction: column-reverse
+    
     .card-2-1, .card-1-2
         flex-basis: auto
     .group-cards-row
@@ -802,3 +797,22 @@ ul
         align-items: flex-start
     .section-enroll
         gap: 32px
+    .card-tutor
+        flex-basis: 0
+        .row
+            flex-direction: row
+    .card-tutor-image
+        aspect-ratio: 648 / 576
+    .cards-row-tutor .card-2-1
+        aspect-ratio: 860 / 576
+    .student
+        aspect-ratio: 648 / 576
+    .student-3
+        aspect-ratio: 1320 / 576
+    .cards-row
+        display: flex
+        flex-direction: column
+    .cards-row-tutor
+        display: flex
+        flex-direction: column-reverse
+        gap: 16px
