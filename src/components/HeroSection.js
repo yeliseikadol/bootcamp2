@@ -4,9 +4,14 @@ import Section from './Section'
 import SectionHeader from './SectionHeader'
 import Tag from './Tag'
 
+
 export default function HeroSection() {
     const SrcWebm = "../titlevideo.webm"
     const SrcM4 = "../titlevideo-2.mp4"
+    
+    const onClick = () => {
+        window.location.href = '#EnrollSection';
+      };
 
     var EmbedVideo = function(props) {
         return (
@@ -34,11 +39,10 @@ export default function HeroSection() {
 
                 <div className='title-section-card'>
 
-                        <div className='title-section-card-form stack'>
+                        <div className='title-section-card-form row'>
                             <div className='title-section-card-form-text stack'>
                                 <SectionHeader
-                                    eyebrow='Интенсивный курс'
-                                    title='UX/UI-дизайнер с&nbsp;нуля'
+                                    title='Веб-дизайнер, UX/UI-дизайнер&nbsp;с&nbsp;нуля'
                                 />
                                 <div className="tag-rows-stack">
                                     <div className='tag-row'>
@@ -52,11 +56,11 @@ export default function HeroSection() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='row button-bar'>
-                                <Button>Поступить</Button>
+                            <div className='stack button-bar'>
+                                <button onClick={onClick}>Поступить</button>
                                 <div className='stack'>
                                     <h4>1560&nbsp;BYN</h4>
-                                    <div className="text--small">или 560&nbsp;BYN в&nbsp;месяц</div>
+                                    <div className="text--small">или 520&nbsp;BYN в&nbsp;месяц</div>
                                 </div>
                             </div>
                         </div>

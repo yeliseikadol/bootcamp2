@@ -19,6 +19,8 @@ import {ReactComponent as EnrollSupport} from './assets/icons/enroll-future.svg'
 import {ReactComponent as EnrollGifts} from './assets/icons/enroll-gifts.svg'
 
 function App() {
+
+
   return (
     <div className="App">
       
@@ -31,7 +33,7 @@ function App() {
         <HeroSection/>
 
         {/* видео */}
-        <Section>
+        <Section className='add-top'>
           <SectionHeader
             eyebrow='Что это за&nbsp;курс'
             title='Интенсивный практический курс, нацеленный на&nbsp;уверенное выполнение частных заказов и&nbsp;работе в&nbsp;компании'
@@ -47,7 +49,7 @@ function App() {
         </Section>
 
         {/* особенности */}
-        <Section>
+        <Section className='add-bottom'>
           <SectionHeader eyebrow='Особенности'/>
           <div className='cards-grid features'>
 
@@ -69,10 +71,11 @@ function App() {
               <div className='card feature-7'>Обучение вёрстке компонентов и&nbsp;стилей</div>
               <div className='card feature-6'>Мастер-классы каждую неделю</div>
             </div>
-
+            {/*
             <div className='cards-row'>         
               <div className='card feature-8'>Поддержка и&nbsp;фидбек от комьюнити навсегда</div>
             </div>
+            */}
           </div>
         </Section>
 
@@ -293,7 +296,7 @@ function App() {
             <div className='stack tutor-block'>
               <div className='cards-grid'>
 
-                <div className='cards-row'>
+                <div className='cards-row cards-row-tutor'>
                   <div className='card card-2-1'></div>
                   <div className='card card-tutor card-1-2'>
                     <div className='img avatar avatar-tutor avatar-kadol'></div>
@@ -317,7 +320,7 @@ function App() {
             </div>
             <div className='stack tutor-card'>
               <div className='cards-grid'>
-                <div className='cards-row'>
+                <div className='cards-row cards-row-tutor'>
                   <div className='card card-2-1'></div>
                   <div className='card card-tutor card-1-2'>
                     <div className='img avatar avatar-tutor avatar-vorobey'></div>
@@ -348,7 +351,8 @@ function App() {
         </Section>
 
 
-        <Section className='section-groups add-top'>
+        <Section className='section-groups'>
+          <div id='EnrollSection'></div>
           <SectionHeader
             eyebrow='Стоимость и&nbsp;группы'
             title='Ближайшие группы'

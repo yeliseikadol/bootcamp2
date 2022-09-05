@@ -10,6 +10,7 @@ export default function Header() {
           </div>
           <nav>
               <a href="tel:+375296976057">+375296976057</a>
+              <div className='caption'>WhatsApp, Viber, Telegram</div>
           </nav>
         </div>
     </header>

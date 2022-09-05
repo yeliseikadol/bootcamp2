@@ -127,26 +127,37 @@ button:hover
     flex-direction: column
     position: relative
 
-.title-section video
-    border-radius: 32px
-
 .title-section-card
     background: transparent
     height: 100%
-    position: absolute
     left: 0
     right: 0
     display: flex
     align-items: center
 
 .title-section-card-form
-    background: $background
-    padding: 64px 48px
     box-sizing: border-box
-    max-width: 600px
-    border-radius: 0 32px 32px 0
     gap: 64px
 
+.title-section-card-form-text
+    flex: 2
+
+.button-bar
+    flex: 1
+
+.title-section
+    gap: 48px
+
+
+.video-bg
+    height: 576px
+    display: flex
+    flex-direction: column
+    overflow-y: hidden
+    align-items: center
+    align-content: center
+    justify-content: center
+    border-radius: 48px
 
 
 //header
@@ -159,7 +170,7 @@ button:hover
 //button-bar
 .button-bar
     gap: 32px
-    align-items: center
+    align-items: flex-start
 
 
 //Tag
@@ -656,3 +667,80 @@ ul
     .curriculum-row
         flex-direction: column
         gap: 64px
+    body
+        overflow-x: hidden
+
+    .header
+        padding: 24px 20px
+    .title-section
+        padding: 0 20px
+        gap: 24px
+    .video-bg
+        height: auto
+        border-radius: 8px
+
+    .tag-row, .tag
+        flex-direction: row
+    .tag-rows-stack
+        gap: 0
+    .tag-outlined:before
+        width: 5px
+        height: 5px
+    .tag-outlined:last-child
+        margin-right: 0
+
+    .title-section-card-form-text
+        gap: 24px
+    .title-section-card-form
+        gap: 32px
+
+    .button-bar
+        gap: 16px
+
+    button
+        padding: 12px 24px
+
+    .add-top
+        padding-top: 64px
+    .add-bottom
+        padding-bottom: 64px
+    .tag-filled
+        margin-bottom: 8px
+    .card
+        border-radius: 8px
+
+    .process-books > .row, .process-books > .tag, .process-books > .tag-row
+        gap: 16px
+        border-radius: 24px
+        padding-left: 24px
+        padding-right: 24px
+    .process-books .books-text
+        padding: 24px 0
+    .process-books .books-img
+        flex-basis: auto
+    .cards-row > * + *
+        margin-top: 16px
+    .cards-grid
+        gap: 16px
+    .certificate-row
+        gap: 16px
+    .cards-row-tutor
+        display: flex
+        flex-direction: column-reverse
+    .card-2-1, .card-1-2
+        flex-basis: auto
+    .group-cards-row
+        flex-direction: column
+        gap: 16px
+    .enroll-row .form
+        width: 100%
+        flex: auto
+    .phone-input
+        flex-direction: row
+        flex-wrap: nowrap
+    .phone-input input
+        width: 100%
+    .footer .cols
+        align-items: flex-start
+    .section-enroll
+        gap: 32px
