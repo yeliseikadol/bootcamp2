@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from './Button'
 import Section from './Section'
 import SectionHeader from './SectionHeader'
 import Tag from './Tag'
