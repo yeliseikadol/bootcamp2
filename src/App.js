@@ -359,7 +359,7 @@ function App() {
               <div className='group-card'>
                 <div className='group-card-dates-section'>
                   <h4 className='group-card-title'>UX/UI дизайн с нуля</h4>
-                  <div className='group-card-dates caption'>Сен 19 — Дек 9</div>
+                  <div className='group-card-dates caption'>Окт 3 — Дек 23</div>
                   <div className='group-card-time caption'>Пн, Ср 19:00—20:45 Минск</div>
                 </div>
                 <div className='group-card-tutor-section'>
@@ -374,7 +374,7 @@ function App() {
               <div className='group-card'>
                 <div className='group-card-dates-section'>
                   <h4 className='group-card-title'>UX/UI дизайн с нуля</h4>
-                  <div className='group-card-dates caption'>Ноя 7 — Янв 26</div>
+                  <div className='group-card-dates caption'>Ноя 21 — Фев 10</div>
                   <div className='group-card-time caption'>Пн, Ср 19:00—20:45 Минск</div>
                 </div>
                 <div className='group-card-tutor-section'>
@@ -389,7 +389,7 @@ function App() {
               <div className='group-card'>
                 <div className='group-card-dates-section'>
                   <h4 className='group-card-title'>UX/UI дизайн с нуля</h4>
-                  <div className='group-card-dates caption'>Ноя 7 — Янв 26</div>
+                  <div className='group-card-dates caption'>Ноя 21 — Фев 10</div>
                   <div className='group-card-time caption'>Пн, Ср 17:00—18:45 Минск</div>
                 </div>
                 <div className='group-card-tutor-section'>
