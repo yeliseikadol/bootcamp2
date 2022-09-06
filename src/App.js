@@ -51,7 +51,7 @@ function App() {
 
         {/* особенности */}
         <Section className='add-bottom'>
-          <SectionHeader eyebrow='Особенности'/>
+          <SectionHeader title='Особенности'/>
           <div className='cards-grid features'>
 
             <div className='cards-row'>
@@ -254,7 +254,7 @@ function App() {
         <Section>
           <SectionHeader
             eyebrow='Результат'
-            title='Продвинутое владение Фигмой и портфолио для работы'
+            title='Продвинутое владение Фигмой и&nbsp;портфолио для работы'
             text1='Про­грамма курса наце­лена на то, чтобы студенты смогли работать самостоятельно. Поэтому все упраж­не­ния, зада­ния и&nbsp;темы ориентированы больше на технические скиллы, а&nbsp;не&nbsp;на&nbsp;тео­рию и&nbsp;общую дизайнерскую обра­зо­ван­ность. Смотрите, какие работы создают уче­ники наших преподавателей:'
             />
             <div className='cards-grid'>
@@ -322,8 +322,8 @@ function App() {
                   <div className='card card-tutor card-1-2'>
                     <div className='img avatar avatar-tutor avatar-vorobey'></div>
                     <h4>Оксана Воробьёва</h4>
-                    <p>Синьор UX/UI дизайнер в Lumos, Беларусь. Автор курса "Путь дизайнера".</p>
-                    <p>Работаю дизайнером с 2018 года. Кроме большого опыта работы, я&nbsp;преподавала дизайн во многих школах Минска и&nbsp;выпустила собственный курс по дизайн-карьере.</p>
+                    <p>Синьор UX/UI дизайнер в&nbsp;Lumos, Беларусь. Автор курса "Путь дизайнера".</p>
+                    <p>Работаю дизайнером с&nbsp;2018 года. Кроме большого опыта работы, я&nbsp;преподавала дизайн во многих школах Минска и&nbsp;выпустила собственный курс по дизайн-карьере.</p>
                     <div className='row'>
                       <a href='https://www.behance.net/oksana_vorobey'>Behance</a>
                       <a href='https://www.linkedin.com/in/oksana-vorobyeva-81a379203'>LinkedIn</a>
@@ -376,7 +376,7 @@ function App() {
                 <div className='group-card-dates-section'>
                   <h4 className='group-card-title'>UX/UI дизайн с нуля</h4>
                   <div className='group-card-dates caption'>Ноя 21 — Фев 10</div>
-                  <div className='group-card-time caption'>Пн, Ср 19:00—20:45 Минск</div>
+                  <div className='group-card-time caption'>Вт, Чт 19:00—20:45 Минск</div>
                 </div>
                 <div className='group-card-tutor-section'>
                   <div className='img group-card-tutor-avatar group-card-tutor-avatar-oksanavorobey'/>

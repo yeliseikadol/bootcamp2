@@ -16,16 +16,16 @@ const checkWeekStyle = styles.includes(weekStyle) ? weekStyle : styles[0]
   return (
     <div className={`curriculum-week ${checkWeekStyle}`}>
       {week != null && 
-        <div className='text--small'>{week}</div>
+        <div className='typography-body2'>{week}</div>
       }
       {title != null && 
         <h4>{title}</h4>
       }
       {text != null && 
-        <p className='text--small'>{text}</p>
+        <p className='typography-body'>{text}</p>
       }
       {task != null && 
-        <p className='text--small'>{task}</p>
+        <p className='typography-body2'>{task}</p>
       }
     </div>
   )

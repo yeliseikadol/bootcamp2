@@ -40,13 +40,13 @@ export default function HeroSection() {
                             <div className='title-section-card-form-text stack'>
                                 <div className='title-section-tag typography-body2'>Интенсивный курс</div>
                                 <h1>Веб-дизайнер,<br/>дизайнер интерфейсов</h1>
-                                <p>Поможем получить навыки для самостоятельной работы за 10 недель.</p>
+                                <p>Поможем получить навыки для самостоятельной работы за&nbsp;10 недель.</p>
                             </div>
                             <div className='row button-bar'>
                                 <button onClick={onClick}>Поступить</button>
                                 <div className='stack'>
-                                    <div className='typography-body'>1560&nbsp;BYN</div>
-                                    <div className='typography-body2'>или 520&nbsp;BYN в&nbsp;месяц</div>
+                                    <div className='typography-body'>520&nbsp;BYN в&nbsp;месяц</div>
+                                    <div className='typography-body2'>Всего 1560&nbsp;BYN</div>
                                 </div>
                             </div>
                         </div>

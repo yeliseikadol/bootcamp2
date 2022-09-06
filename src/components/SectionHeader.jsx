@@ -7,7 +7,7 @@ const {eyebrow, title, text1, text2, children, className} = props
   return (
     <header className={`section-header ${className}`}>
         {eyebrow != null &&
-            <h3>{eyebrow}</h3>
+            <h3 className='typography-eyebrow'>{eyebrow}</h3>
             }
         
         {title != null &&
