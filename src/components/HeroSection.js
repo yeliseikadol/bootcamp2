@@ -38,28 +38,17 @@ export default function HeroSection() {
 
                 <div className='title-section-card'>
 
-                        <div className='title-section-card-form row'>
+                        <div className='title-section-card-form stack'>
                             <div className='title-section-card-form-text stack'>
-                                <SectionHeader
-                                    title='Веб-дизайнер, UX/UI-дизайнер&nbsp;с&nbsp;нуля'
-                                />
-                                <div className="tag-rows-stack">
-                                    <div className='tag-row'>
-                                        <Tag>Онлайн</Tag>
-                                        <Tag>10&nbsp;недель</Tag>
-                                        <Tag>Сертификат IBM</Tag>
-                                    </div>
-                                    <div className='tag-row'>
-                                        <Tag>Сообщество</Tag>
-                                        <Tag>Помощь в&nbsp;поиске работы</Tag>
-                                    </div>
-                                </div>
+                                <div className='title-section-tag typography-body2'>Интенсивный курс</div>
+                                <h1>Веб-дизайнер,<br/>дизайнер интерфейсов</h1>
+                                <p>Поможем получить навыки для самостоятельной работы за 10 недель.</p>
                             </div>
-                            <div className='stack button-bar'>
+                            <div className='row button-bar'>
                                 <button onClick={onClick}>Поступить</button>
                                 <div className='stack'>
-                                    <h4>1560&nbsp;BYN</h4>
-                                    <div className="text--small">или 520&nbsp;BYN в&nbsp;месяц</div>
+                                    <div className='typography-body'>1560&nbsp;BYN</div>
+                                    <div className='typography-body2'>или 520&nbsp;BYN в&nbsp;месяц</div>
                                 </div>
                             </div>
                         </div>

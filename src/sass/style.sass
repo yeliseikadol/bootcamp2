@@ -106,6 +106,7 @@ button
     color: $text
     width: auto
     cursor: pointer
+    width: fit-content
     @media screen and (max-width: 1000px)
         padding: 12px 24px
 
@@ -169,7 +170,7 @@ button:hover
 //button-bar
 .button-bar
     gap: 32px
-    align-items: flex-start
+    align-items: center
 
 
 //Tag
@@ -183,9 +184,7 @@ button:hover
 
 .tag-row
     @extend .row
-
-    .tag
-        margin-right: 8px
+    gap: 8px
 
 .tag-outlined:first-child:before
     display: none
@@ -709,6 +708,24 @@ ul
     .card-tutor-ov3
         background-image: url('../assets/images/ov3@2x.jpg')
 
+
+.title-section
+    gap: 32px
+.hero-header
+    gap: 16px
+.title-section-card-form
+    gap: 32px
+
+.title-section-tag
+    display: flex
+    border-radius: 24px
+    padding: 7px 8px
+    border: 1px solid $border
+    width: fit-content
+
+.title-section-card-form
+    gap: 32px
+
 //media query
 
 @media screen and (max-width: 1000px)
@@ -727,13 +744,31 @@ ul
         overflow-x: hidden
 
     .header
-        padding: 24px 20px
+        padding: 16px 20px
+        position: absolute
+        z-index: 1
+        left: 0
+        top: 0
+        width: 100%
+        background: linear-gradient(rgba(255,255,255,0.2), transparent)
+
+    .header .row
+        flex-direction: row
+    .header svg
+        height: 40px
+        width: fit-content
     .title-section
-        padding: 0 20px
+        padding: 0
         gap: 24px
     .video-bg
         height: auto
         border-radius: 8px
+
+    .title-section-card
+        margin-top: -64px
+        background-color: $background
+        border-radius: 16px
+        padding: 20px
 
     .tag-row, .tag
         flex-direction: row
@@ -760,8 +795,6 @@ ul
         padding-top: 64px
     .add-bottom
         padding-bottom: 64px
-    .tag-filled
-        margin-bottom: 8px
     .card
         border-radius: 8px
 
@@ -815,3 +848,6 @@ ul
         display: flex
         flex-direction: column-reverse
         gap: 16px
+    .button-bar
+        flex-direction: row
+
