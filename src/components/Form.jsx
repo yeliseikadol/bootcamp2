@@ -6,13 +6,13 @@ export default function Form() {
     <div className='form'>
       <h4>3 месячных платежа</h4>
       <div className='prices'>
-        <div className='price-old'>560 BYN</div>
+        <div className='price-old'>620 BYN</div>
         <h3 className='price-actual'>520 BYN в месяц</h3>
       </div>
       <div className='price-calculation'>
         <div className='price-calculation-row'>
             <div>Три платежа</div> 
-            <div>560 BYN</div>
+            <div>620 BYN</div>
         </div>
         <div className='price-calculation-row'>
             <div>Скидка за запись до 19 сентября</div> 

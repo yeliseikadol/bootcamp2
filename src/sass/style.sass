@@ -530,16 +530,14 @@ button:hover
 
 
 .phone-input
-    font-size: 23px
-    line-height: 32px
+    @extend .typography-body
     gap: 16px
     align-items: baseline
     input
+        @extend .typography-body
         background-color: $background-light
         border: none
         padding: 12px 16px
-        font-size: 23px
-        line-height: 32px
         flex: 1
         border-radius: 8px
 
@@ -610,6 +608,7 @@ ul
     display: flex
     gap: 16px
     padding: 24px 0
+    align-items: center
 
 .group-card-tutor-avatar
     background-size: contain
@@ -868,4 +867,9 @@ ul
         gap: 16px
     .button-bar
         flex-direction: row
-
+    .group-card-tutor-avatar
+        width: 40px
+        height: 40px
+        flex-basis: 40px
+    .group-card-tutor-text-section
+        gap: 4px
