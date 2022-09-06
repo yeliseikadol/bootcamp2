@@ -17,13 +17,14 @@ import {ReactComponent as EnrollHardSkills} from './assets/icons/enroll-skill.sv
 import {ReactComponent as EnrollSoftSkills} from './assets/icons/enroll-soft.svg'
 import {ReactComponent as EnrollSupport} from './assets/icons/enroll-future.svg'
 import {ReactComponent as EnrollGifts} from './assets/icons/enroll-gifts.svg'
+import TopLine from './components/top-line';
 
 function App() {
 
 
   return (
     <div className="App">
-      
+      <TopLine/>
       <Header/>
 
       <main>

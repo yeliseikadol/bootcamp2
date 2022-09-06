@@ -726,9 +726,19 @@ ul
 .title-section-card-form
     gap: 32px
 
+
+
+.top-line
+    background: $secondary
+    padding: 16px 60px
+    & > *
+        max-width: 1320px
+        margin: 0 auto
 //media query
 
 @media screen and (max-width: 1000px)
+    .top-line
+        padding: 16px 16px
     .cards-row
         gap: 16px
     .card
@@ -748,7 +758,7 @@ ul
         position: absolute
         z-index: 1
         left: 0
-        top: 0
+        top: 52px
         width: 100%
         background: linear-gradient(rgba(255,255,255,0.2), transparent)
 
