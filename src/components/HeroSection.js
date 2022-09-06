@@ -1,7 +1,5 @@
 import React from 'react'
 import Section from './Section'
-import SectionHeader from './SectionHeader'
-import Tag from './Tag'
 
 
 export default function HeroSection() {
