@@ -766,19 +766,24 @@ ul
         flex-direction: row
     .header svg
         height: 40px
-        width: fit-content
+        width: auto
     .title-section
         padding: 0
         gap: 24px
     .video-bg
-        height: auto
+        height: 100vw
         border-radius: 8px
-
+    .video-bg video
+        object-fit: cover
+        height: 100%
+    .header nav
+        display: none
     .title-section-card
         margin-top: -64px
         background-color: $background
         border-radius: 16px
         padding: 20px
+        z-index: 1
 
     .tag-row, .tag
         flex-direction: row
