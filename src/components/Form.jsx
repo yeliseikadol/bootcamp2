@@ -6,21 +6,21 @@ export default function Form() {
     <div className='form'>
       <h4>3 месячных платежа</h4>
       <div className='prices'>
-        <div className='price-old'>620 BYN</div>
-        <h3 className='price-actual'>520 BYN в месяц</h3>
+        <div className='price-old'>720&nbsp;BYN</div>
+        <h3 className='price-actual'>520&nbsp;BYN в&nbsp;месяц</h3>
       </div>
       <div className='price-calculation'>
         <div className='price-calculation-row'>
             <div>Три платежа</div> 
-            <div>620 BYN</div>
+            <div>720&nbsp;BYN</div>
         </div>
         <div className='price-calculation-row'>
-            <div>Скидка за запись до 19 сентября</div> 
-            <div>–300 BYN</div>
+            <div>Скидка за запись до 19&nbsp;сентября</div> 
+            <div>–600&nbsp;BYN</div>
         </div>
         <div className='price-calculation-row'>
             <div>Всего</div> 
-            <div>1560 BYN</div>
+            <div>1560&nbsp;BYN</div>
         </div>
       </div>
       <form 
@@ -38,7 +38,8 @@ export default function Form() {
                 required
                 />
             </div>
-        <Button type='submit'>Поступить</Button>
+        <Button type='submit'>Записаться</Button>
+        <p className='typography-body2'>После нажатия на кнопку с вами свяжется менеджер. Мы работаем по будням с 10 до 18.</p>
       </form>
     </div>
   )

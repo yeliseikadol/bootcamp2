@@ -38,7 +38,7 @@ export default function HeroSection() {
 
                         <div className='title-section-card-form stack'>
                             <div className='title-section-card-form-text stack'>
-                                <div className='title-section-tag typography-body2'>Интенсивный курс</div>
+                                <div className='title-section-tag typography-body2'>Интенсивный курс • С нуля</div>
                                 <h1>Веб-дизайнер,<br/>дизайнер интерфейсов</h1>
                                 <p>Поможем получить навыки для самостоятельной работы за&nbsp;10 недель.</p>
                             </div>
