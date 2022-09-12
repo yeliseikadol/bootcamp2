@@ -1,5 +1,5 @@
 import React from 'react'
-import {ReactComponent as Logotype} from '../assets/logo_big.svg'
+import {ReactComponent as Logotype} from '../assets/logo.svg'
 
 export default function Header() {
   return (
@@ -8,9 +8,9 @@ export default function Header() {
           <div className="logo-container">
               <Logotype/>
           </div>
-          <nav>
+          <nav className='row'>
               <a href="tel:+375296976057">+375296976057</a>
-              <div className='caption'>WhatsApp, Viber, Telegram</div>
+              <div className='typography-body'>WhatsApp, Viber, Telegram</div>
           </nav>
         </div>
     </header>

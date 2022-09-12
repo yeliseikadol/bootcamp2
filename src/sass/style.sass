@@ -29,6 +29,8 @@ body
     display: flex
     flex-direction: column
 
+.question-answer *
+    color: $text-on-dark
 
 .content-section
     @extend .stack
@@ -115,11 +117,10 @@ button:hover
 
 
 
+
 .title-section h3
     @extend h4
 
-.title-section-card-form-text
-    gap: 32px 
 
 .title-section
     padding: 0 60px
@@ -128,9 +129,7 @@ button:hover
     position: relative
 
 .title-section-card
-    background-color: $secondary
-    border-radius: 0 0 48px 48px
-    padding: 24px
+    padding: 96px 0
     height: 100%
     left: 0
     right: 0
@@ -139,7 +138,8 @@ button:hover
 
 .title-section-card-form
     box-sizing: border-box
-    gap: 64px
+    gap: 48px
+    
 
 .title-section-card-form-text
     flex: 2
@@ -157,15 +157,23 @@ button:hover
     align-content: center
     justify-content: center
     background: #FFF9CC
-    border-radius: 48px 48px 0 0
+    border-radius: 48px
 
 
 //header
 .header
-    padding: 24px 60px
+    padding: 22px 60px 26px
+    border-bottom: 1px solid $border
 
 .header .row
     justify-content: space-between
+
+.logo-container
+    font-size: 0
+    line-height: 0
+
+nav
+    gap: 16px
 
 //button-bar
 .button-bar
@@ -203,8 +211,8 @@ button:hover
     height: 48px
     gap: 12px
     background-color: $secondary
-    border-radius: 6px
-    font-weight: bold
+    border-radius: 24px
+    font-weight: 500
 
 
 
@@ -420,7 +428,7 @@ button:hover
 .week-launch *
     color: $status-warning
 .week-rest *
-    color: $text
+    color: $text-gray
 
 
 
@@ -715,20 +723,9 @@ ul
     gap: 0
 .hero-header
     gap: 16px
-.title-section-card-form
-    gap: 32px
 
-.title-section-tag
-    display: flex
-    border-radius: 24px
-    padding: 7px 10px
-    border: 1px solid $border
-    width: fit-content
-
-.title-section-card-form
-    gap: 32px
-
-
+.color-purple
+    color: $primary
 
 .top-line
     background: $secondary
@@ -736,6 +733,9 @@ ul
     & > *
         max-width: 1320px
         margin: 0 auto
+        display: flex
+        gap: 8px
+        align-items: center
 //media query
 
 @media screen and (max-width: 1000px)
@@ -746,7 +746,7 @@ ul
     .card
         height: auto
         width: 100%
-        aspect-ratio: 1
+        aspect-ratio: 7 / 9
     .curruculum-rows
         gap: 64px
     .curriculum-row
@@ -757,12 +757,8 @@ ul
 
     .header
         padding: 16px 20px
-        position: absolute
-        z-index: 1
         left: 0
-        top: 52px
         width: 100%
-        background: linear-gradient(rgba(255,255,255,0.2), transparent)
 
     .header .row
         flex-direction: row
@@ -771,21 +767,17 @@ ul
         width: auto
     .title-section
         padding: 0
-        gap: 24px
     .video-bg
         height: 100vw
-        border-radius: 8px
+        border-radius: 24px
     .video-bg video
         object-fit: cover
         height: 100%
     .header nav
         display: none
     .title-section-card
-        margin-top: -64px
         background-color: $background
-        border-radius: 16px
-        padding: 20px
-        z-index: 1
+        padding: 64px 20px
 
     .tag-row, .tag
         flex-direction: row
@@ -796,9 +788,6 @@ ul
         height: 5px
     .tag-outlined:last-child
         margin-right: 0
-
-    .title-section-card-form-text
-        gap: 24px
     .title-section-card-form
         gap: 32px
 
@@ -813,7 +802,7 @@ ul
     .add-bottom
         padding-bottom: 64px
     .card
-        border-radius: 8px
+        border-radius: 16px
 
     .process-books > .row, .process-books > .tag, .process-books > .tag-row
         gap: 16px
@@ -876,3 +865,10 @@ ul
     .form
         padding: 24px
         border-radius: 24px
+
+    .section-header h2
+        font-size: 22.5px
+        line-height: 120%//or 27px
+    .section-header h3
+        font-size: 14px
+        line-height: 120%

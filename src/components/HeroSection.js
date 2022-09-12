@@ -32,25 +32,28 @@ export default function HeroSection() {
 
             <Section className='title-section'>
 
-                <EmbedVideo/>
-
                 <div className='title-section-card'>
 
                         <div className='title-section-card-form stack'>
                             <div className='title-section-card-form-text stack'>
-                                <div className='title-section-tag typography-body2'>Интенсивный курс • С нуля</div>
-                                <h1>Веб-дизайнер,<br/>дизайнер интерфейсов</h1>
-                                <p>Поможем получить навыки для самостоятельной работы за&nbsp;10 недель.</p>
+                                <div className='typography-h1 color-purple'>Интенсивный курс</div>
+                                <h1>Веб-дизайнер, UX/UI-дизайнер <br/>за 10&nbsp;недель с&nbsp;нуля</h1>
                             </div>
                             <div className='row button-bar'>
                                 <button onClick={onClick}>Поступить</button>
                                 <div className='stack'>
-                                    <div className='typography-body'>520&nbsp;BYN в&nbsp;месяц</div>
+                                    <div className='typography-h4'>520&nbsp;BYN в&nbsp;месяц</div>
                                     <div className='typography-body2'>Всего 1560&nbsp;BYN</div>
                                 </div>
                             </div>
                         </div>
+
+                        
                 </div>
+
+                <EmbedVideo/>
+
+
             </Section>
     )
 }
