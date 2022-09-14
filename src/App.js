@@ -310,7 +310,7 @@ function App() {
                     <div className='img avatar avatar-tutor avatar-kadol'></div>
                     <h4>Елисей Кадол</h4>
                     <p>Старший дизайнер в Admirals, Эстония</p>
-                    <p>Профессионально работаю дизайнером с&nbsp;2014 года. Работаю удалённо с&nbsp;2020. Расскажу вам как быстро идти по карьере, чтобы жить так, как вам хочется.</p>
+                    <p>Работаю дизайнером с&nbsp;2014 года. Работаю удалённо с&nbsp;2020. Научу вас быстро идти по карьерной лестнице, чтобы жить так, как вам хочется.</p>
                     <div className='row'>
                       <a href='https://behance.net/yeliseikadol'>Behance</a>
                       <a href='https://dribbble.com/yeliseikadol'>Dribbble</a>
@@ -378,7 +378,7 @@ function App() {
                   <div className='img group-card-tutor-avatar group-card-tutor-avatar-yeliseikadol'/>
                   <div className='group-card-tutor-text-section'>
                     <div className='group-card-tutor-name caption'>Елисей Кадол</div>
-                    <div className='group-card-tutor-description caption'>UX/UI учитель, Минск</div>
+                    <div className='group-card-tutor-description caption'>UX/UI преподаватель, Минск</div>
                   </div>
                 </div>
               </div>
@@ -393,7 +393,7 @@ function App() {
                   <div className='img group-card-tutor-avatar group-card-tutor-avatar-oksanavorobey'/>
                   <div className='group-card-tutor-text-section'>
                     <div className='group-card-tutor-name caption'>Оксана Воробьёва</div>
-                    <div className='group-card-tutor-description caption'>UX/UI учитель, Минск</div>
+                    <div className='group-card-tutor-description caption'>UX/UI преподаватель, Минск</div>
                   </div>
                 </div>
               </div>
@@ -408,7 +408,7 @@ function App() {
                   <div className='img group-card-tutor-avatar group-card-tutor-avatar-yeliseikadol'/>
                   <div className='group-card-tutor-text-section'>
                     <div className='group-card-tutor-name caption'>Елисей Кадол</div>
-                    <div className='group-card-tutor-description caption'>UX/UI учитель, Минск</div>
+                    <div className='group-card-tutor-description caption'>UX/UI преподаватель, Минск</div>
                   </div>
                 </div>
               </div>
