@@ -34,7 +34,7 @@ function App() {
         <HeroSection/>
 
         {/* видео */}
-        <Section>
+        <Section className='add-bottom'>
           <SectionHeader
             eyebrow='Что это за&nbsp;курс'
             title='Школа Кадола — это интенсивные курсы, нацеленные на уверенное выполнение заказов и получение работы. Проще говоря, мы даём навыки для заработка денег, чтобы вы могли учиться дальше уже работая.'
@@ -50,8 +50,58 @@ function App() {
         </Section>
 
         {/* особенности */}
-        <Section className='add-bottom'>
+        <Section className='add-top add-bottom why-us'>
           <h3>Почему вам понравится</h3>
+          <div className='why-us__grid'>
+            <div className='row'>
+              <div className='projects'>
+                <div className='why-us__image-projects'></div>
+                <div className='why-us__description-projects typography-body2'>Во время учебы вы сделаете 2 крепких проекта для портфолио: сайт и мобильное приложение</div>
+              </div>
+            </div>
+
+
+            <div className='why-us-row'>
+              <div className='why-us__block practice'>
+                <div className='why-us__image-practice'></div>
+                  <div className='why-us__description-practice typography-body2'>Вы будете практиковаться с преподавателем 2-3 раза в неделю, а учить теорию по книжкам.</div>
+              </div>
+              <div className='why-us__block certificate'>
+                <div className='why-us__image-certificate'></div>
+                <div className='why-us__description-certificate typography-body2'>Вы получите сертификат IBM для LinkedIn.
+                </div>
+              </div>
+            </div>
+
+
+
+            <div className='row'>
+              <div className='why-us__block resume'>
+                <div className='why-us__image-resume'></div>
+                  <div className='why-us__description-resume typography-body2'>Вы начнёте искать работу уже в середине обучения.</div>
+              </div>
+              <div className='why-us__block guidelines'>
+                <div className='why-us__image-guidelines'></div>
+                <div className='why-us__description-guidelines typography-body2'>У вас будут инструкции по выполнению заданий, чтобы вы могли работать, даже если не хватает опыта.
+                </div>
+              </div>
+            </div>
+
+            <div className='row'>
+              <div className='why-us__block masterclasses'>
+                <div className='why-us__image-masterclasses'></div>
+                  <div className='why-us__description-masterclasses typography-body2'>Каждую неделю вас ждут мастер-классы про то, как делать разные крутые штуки.</div>
+              </div>
+              <div className='why-us__block code'>
+                <div className='why-us__image-code'></div>
+                <div className='why-us__description-code typography-body2'>Вы научитесь самостоятельно писать код компонентов и создавать сайты.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/*
           <div className='cards-grid features'>
 
             <div className='cards-row'>
@@ -73,19 +123,19 @@ function App() {
               <div className='card feature-7'>Вы научитесь компьютерной вёрстке. Это значит, что вы сами сможете помочь кому-то запустить или обновить бизнес.</div>
               
             </div>
-            {/*
+            
             <div className='cards-row'>         
               <div className='card feature-8'>Поддержка и&nbsp;фидбек от комьюнити навсегда</div>
             </div>
-            */}
-          </div>
+            
+          </div>*/}
         </Section>
 
 
 
 
         {/* как проходит обучение */}
-        <Section className='process-section add-top'>
+        <Section className='process-section add-top add-bottom'>
           <SectionHeader
             eyebrow='Как проходит обучение'
             title='Практикуйтесь с преподавателем'
@@ -154,7 +204,7 @@ function App() {
 
         
         
-        <Section className='add-top'>
+        <Section className='add-top add-bottom schedule'>
           <SectionHeader
             eyebrow='Расписание на неделю'
             title='Учитесь по вечерам, отдыхайте по выходным'
@@ -164,7 +214,7 @@ function App() {
             <div className='caption'>Все занятия записываются, поэтому ничего страшного, если пропустить одно или несколько.</div>
         </Section>
 
-        <Section>
+        <Section className='add-top add-bottom'>
           <SectionHeader
             eyebrow='Программа обучения'
             title='Учите теорию под задачу, а не для общей образованности'
@@ -261,7 +311,7 @@ function App() {
           </div>
         </Section>
 
-        <Section>
+        <Section className='result add-top add-bottom'>
           <SectionHeader
             eyebrow='Итоговый результат'
             title='Итог — вы готовы работать'
@@ -282,7 +332,7 @@ function App() {
             </div>
         </Section>
 
-        <Section>
+        <Section className='certificate-section add-top add-bottom'>
           <SectionHeader
             title='Сертификат'
             text1='Кроме сертификата нашей школы, у вас будет ещё сертификат от IBM.'
@@ -293,7 +343,7 @@ function App() {
           </div>
         </Section>
 
-        <Section>
+        <Section className='add-top add-bottom'>
           <SectionHeader
             eyebrow='Преподаватели'
             title='Учитесь у опытных дизайнеров из Беларуси'
