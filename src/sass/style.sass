@@ -232,14 +232,22 @@ nav
     .why-us-row
         gap: 24px
         display: flex
+        @media screen and (max-width: 1023px)
+            flex-direction: column
     .row
         gap: 24px
+        @media screen and (max-width: 1023px)
+            flex-direction: column
+            gap: 24px
     .why-us__block.code, .why-us__block.masterclasses
         flex: 1
     .projects
         width: 100%
         display: flex
         gap: 24px
+        @media screen and (max-width: 1023px)
+            flex-direction: column
+            gap: 8px
     .why-us__image-projects
         background-image: url('../assets/images/why-us-image-projects.png')
         aspect-ratio: 1096 / 744
@@ -249,15 +257,20 @@ nav
         background-size: contain
         @media screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
             background-image: url('../assets/images/why-us-image-projects@2x.png')
+        @media screen and (max-width: 1023px)
+            width: calc( 100% + 40px)
+            margin-left: -20px
     .why-us__description-projects
         flex-basis: 198px
+        @media screen and (max-width: 1023px)
+            flex-basis: auto
     .why-us__block
         display: flex
         flex-direction: column
         gap: 8px
     .why-us__block.practice, .why-us__block.guidelines
         flex: 0 0 calc((100% - 12px) / 3 * 2)
-    .why-us__block.certificate, .why-us__block.resume
+    .why-us__block.why-us-certificate, .why-us__block.resume
         flex: 1
     .why-us__image-practice
         background-image: url('../assets/images/why-us-image-practice.png')
@@ -268,6 +281,9 @@ nav
         background-size: contain
         @media screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
             background-image: url('../assets/images/why-us-image-practice@2x.png')
+        @media screen and (max-width: 1023px)
+            width: calc( 100% + 40px)
+            margin-left: -20px
     .why-us__image-certificate
         background-image: url('../assets/images/why-us-image-certificate.png')
         aspect-ratio: 424 / 576
@@ -277,6 +293,12 @@ nav
         background-size: contain
         @media screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
             background-image: url('../assets/images/why-us-image-certificate@2x.png')
+        @media screen and (max-width: 1023px)
+            width: calc(100% + 40px)
+            margin-left: -20px
+            aspect-ratio: 872/576
+            background-size: cover
+            background-position: 50%
     .why-us__image-resume
         background-image: url('../assets/images/why-us-image-resume.png')
         aspect-ratio: 424 / 576
@@ -286,6 +308,12 @@ nav
         background-size: contain
         @media screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
             background-image: url('../assets/images/why-us-image-resume@2x.png')
+        @media screen and (max-width: 1023px)
+            width: calc(100% + 40px)
+            margin-left: -20px
+            aspect-ratio: 872/576
+            background-position: 50%
+            background-color: $background-light
     .why-us__image-guidelines
         background-image: url('../assets/images/why-us-image-guidelines.png')
         aspect-ratio: 872 / 576
@@ -295,6 +323,9 @@ nav
         background-size: contain
         @media screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
             background-image: url('../assets/images/why-us-image-guidelines@2x.png')
+        @media screen and (max-width: 1023px)
+            width: calc( 100% + 40px)
+            margin-left: -20px
     .why-us__image-masterclasses
         background-image: url('../assets/images/why-us-image-masterclass.png')
         aspect-ratio: 648 / 576
@@ -304,6 +335,9 @@ nav
         background-size: contain
         @media screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
             background-image: url('../assets/images/why-us-image-masterclass@2x.png')
+        @media screen and (max-width: 1023px)
+            width: calc( 100% + 40px)
+            margin-left: -20px
     .why-us__image-code
         background-image: url('../assets/images/why-us-image-code.png')
         aspect-ratio: 648 / 576
@@ -313,6 +347,9 @@ nav
         background-size: contain
         @media screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
             background-image: url('../assets/images/why-us-image-code@2x.png')
+        @media screen and (max-width: 1023px)
+            width: calc( 100% + 40px)
+            margin-left: -20px
 
 
 //CARDS
@@ -767,6 +804,8 @@ ul
     background-position: 50% 100%
     background-size: contain
     background-repeat: no-repeat
+    border-radius: 32px
+    background-color: transparent
 .student-1
     background-image: url('../assets/images/student1.jpg')
 .student-2
@@ -968,3 +1007,6 @@ ul
     .section-header h3
         font-size: 14px
         line-height: 120%
+
+    .student, .card-tutor-image
+        border-radius: 32px

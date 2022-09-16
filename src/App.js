@@ -66,7 +66,7 @@ function App() {
                 <div className='why-us__image-practice'></div>
                   <div className='why-us__description-practice typography-body2'>Вы будете практиковаться с преподавателем 2-3 раза в неделю, а учить теорию по книжкам.</div>
               </div>
-              <div className='why-us__block certificate'>
+              <div className='why-us__block why-us-certificate'>
                 <div className='why-us__image-certificate'></div>
                 <div className='why-us__description-certificate typography-body2'>Вы получите сертификат IBM для LinkedIn.
                 </div>
@@ -335,7 +335,7 @@ function App() {
         <Section className='certificate-section add-top add-bottom'>
           <SectionHeader
             title='Сертификат'
-            text1='Кроме сертификата нашей школы, у вас будет ещё сертификат от IBM.'
+            text1='Кроме сертификата нашей школы, у вас будет сертификат от IBM.'
             />
           <div className='certificate-row'>
             <div className='img certificate certificate-shkolakadola'></div>
