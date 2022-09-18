@@ -7,20 +7,20 @@ export default function Form() {
       <h4>3 месячных платежа</h4>
       <div className='prices'>
         <div className='price-old'>720&nbsp;BYN</div>
-        <h3 className='price-actual'>520&nbsp;BYN в&nbsp;месяц</h3>
+        <h3 className='price-actual'>560&nbsp;BYN в&nbsp;месяц</h3>
       </div>
       <div className='price-calculation'>
         <div className='price-calculation-row'>
-            <div>Три платежа</div> 
-            <div>720&nbsp;BYN</div>
+            <div>Полная стоимость</div> 
+            <div>2&nbsp;160&nbsp;BYN</div>
         </div>
         <div className='price-calculation-row'>
-            <div>Скидка за запись до 19&nbsp;сентября</div> 
-            <div>–600&nbsp;BYN</div>
+            <div>Скидка за запись до 29&nbsp;сентября</div> 
+            <div>–480&nbsp;BYN</div>
         </div>
         <div className='price-calculation-row'>
             <div>Всего</div> 
-            <div>1560&nbsp;BYN</div>
+            <div>1&nbsp;680&nbsp;BYN</div>
         </div>
       </div>
       <form 
