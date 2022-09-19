@@ -42,8 +42,8 @@ export default function HeroSection() {
                             <div className='row button-bar'>
                                 <button onClick={onClick}>Поступить</button>
                                 <div className='stack'>
-                                    <div className='typography-h4'>520&nbsp;BYN в&nbsp;месяц</div>
-                                    <div className='typography-body2'>Всего 1560&nbsp;BYN</div>
+                                    <div className='typography-h4'>560&nbsp;BYN в&nbsp;месяц</div>
+                                    <div className='typography-body2'>Всего 1680&nbsp;BYN</div>
                                 </div>
                             </div>
                         </div>
