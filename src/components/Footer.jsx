@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <div className="col">
                 <div>ИП Кадол Е. Н.</div>
-                <div><a href="/template" target='blank_'>Реквизиты</a></div>
+                <div><a href="/rekvizity">Реквизиты</a></div>
             </div>
             <div className="col">
                 <div>Сухаревская улица, 62</div>
