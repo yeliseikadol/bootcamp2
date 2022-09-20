@@ -1,6 +1,7 @@
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Main from './main';
+import Rekvizity from './components/Rekvizity';
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Main/>}></Route>
-        <Route path='/template' element='test template'></Route>
+        <Route path='/rekvizity' element={<Rekvizity/>}></Route>
       </Routes>
     </BrowserRouter>
   );
