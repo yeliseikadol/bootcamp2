@@ -15,7 +15,7 @@ export default function Form() {
             <div>2&nbsp;160&nbsp;BYN</div>
         </div>
         <div className='price-calculation-row'>
-            <div>Скидка за запись до 29&nbsp;сентября</div> 
+            <div>Скидка за запись до 30&nbsp;сентября</div> 
             <div>–480&nbsp;BYN</div>
         </div>
         <div className='price-calculation-row'>
