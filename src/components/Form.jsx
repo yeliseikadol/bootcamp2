@@ -29,11 +29,12 @@ export default function Form() {
         method="POST" 
         data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
-        <input
-                name='promocode'
-                type='text'
-                placeholder="Прокомод"
-                />
+        <div className='row phone-input'></div>
+          <input
+                  name='promocode'
+                  type='text'
+                  placeholder="Прокомод"
+                  />
         <div className='row phone-input'>
             <div className='prefix'>+375</div>
             <input
