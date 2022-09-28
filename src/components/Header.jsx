@@ -9,8 +9,8 @@ export default function Header() {
               <Logotype/>
           </div>
           <nav className='row'>
-              <a href="tel:+375296976057">+375296976057</a>
-              <div className='typography-body'>WhatsApp, Viber, Telegram</div>
+              <div>Наш Instagram</div>
+              <a href="https://instagram.com/bootcamp.by">@bootcamp.by</a>
           </nav>
         </div>
     </header>
