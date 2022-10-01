@@ -871,6 +871,28 @@ ul
         display: flex
         gap: 8px
         align-items: center
+
+.flex-column 
+    display: flex
+    flex-direction: column
+
+.input-container
+    gap: 8px
+
+input, select
+    @extend .typography-body
+    padding: 12px
+    background: $field
+    border: 0px
+    border-radius: 8px 8px 0 0
+    border-bottom: 1px solid $border-strong
+    &:focus
+        outline: 0
+        border-bottom: 1px solid $border-focus
+
+.input-label
+    @extend .typography-h4
+
 //media query
 
 @media screen and (max-width: 1000px)
