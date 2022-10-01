@@ -71,9 +71,9 @@ export default function Form() {
                 name='class'
                 placeholder="Выберите группу"
                 required>
-                  <option value='yelisei-oct3'>Елисей (3 окт — 23 дек; Пн, Ср 19:00)</option>
-                  <option value='oksana-nov21'>Оксана (21 ноя — 10 фев; Вт, Чт 19:00)</option>
-                  <option value='yelisei-nov21'>Елисей (21 ноя — 10 фев; Пн, Ср 17:00)</option>
+                  <option value='Елисей, 03.10 — 23.12, пн и ср с 19:00'>Елисей (3 окт — 23 дек; Пн, Ср 19:00)</option>
+                  <option value='Оксана, 21.11 — 10.02, вт и чт с 19:00'>Оксана (21 ноя — 10 фев; Вт, Чт 19:00)</option>
+                  <option value='Елисей, 21.11 — 10.02, пн и ср с 17:00'>Елисей (21 ноя — 10 фев; Пн, Ср 17:00)</option>
             </select>
             </div>
             <div className='flex-column input-container'>
