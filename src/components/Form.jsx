@@ -5,7 +5,19 @@ export default function Form() {
   return (
     <div className='form'>
       <h4>3 месячных платежа</h4>
+
+
       <div className='prices'>
+        <h3 className='price'>720&nbsp;BYN в&nbsp;месяц</h3>
+      </div>
+      <div className='price-calculation'>
+        <div className='price-calculation-row'>
+            <div>Полная стоимость</div> 
+            <div>2&nbsp;160&nbsp;BYN</div>
+        </div>
+      </div>
+
+      {/*<div className='prices'>
         <div className='price-old'>720&nbsp;BYN</div>
         <h3 className='price-actual'>560&nbsp;BYN в&nbsp;месяц</h3>
       </div>
@@ -22,7 +34,12 @@ export default function Form() {
             <div>Всего</div> 
             <div>1&nbsp;680&nbsp;BYN</div>
         </div>
-      </div>
+  </div>*/}
+
+
+
+
+
       <form 
         className='stack' 
         name="contact" 
