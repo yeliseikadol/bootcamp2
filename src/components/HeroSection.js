@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './Section'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 export default function HeroSection() {
