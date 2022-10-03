@@ -420,21 +420,6 @@ function Main() {
               <div className='group-card'>
                 <div className='group-card-dates-section'>
                   <h4 className='group-card-title'>UX/UI дизайн с нуля</h4>
-                  <div className='group-card-dates caption'>Окт 3 — Дек 23</div>
-                  <div className='group-card-time caption'>Пн, Ср 19:00—20:45 Минск</div>
-                </div>
-                <div className='group-card-tutor-section'>
-                  <div className='img group-card-tutor-avatar group-card-tutor-avatar-yeliseikadol'/>
-                  <div className='group-card-tutor-text-section'>
-                    <div className='group-card-tutor-name caption'>Елисей Кадол</div>
-                    <div className='group-card-tutor-description caption'>UX/UI преподаватель, Минск</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className='group-card'>
-                <div className='group-card-dates-section'>
-                  <h4 className='group-card-title'>UX/UI дизайн с нуля</h4>
                   <div className='group-card-dates caption'>Ноя 21 — Фев 10</div>
                   <div className='group-card-time caption'>Вт, Чт 19:00—20:45 Минск</div>
                 </div>
@@ -485,14 +470,14 @@ function Main() {
                   <EnrollSoftSkills/>
                   <div className='stack enroll-feature-text'>
                     <h4>Продвинутые софт скиллы</h4>
-                    <p>Самостоятельность, ответственность, внутренная уверенность, умение постоять за себя</p>
+                    <p>Самостоятельность, ответственность, внутренная уверенность, умение постоять за&nbsp;себя</p>
                   </div>
                 </div>
                 <div className='enroll-feature row'>
                   <EnrollSupport/>
                   <div className='stack enroll-feature-text'>
                     <h4>Поддержка в будущем</h4>
-                    <p>Помощь в поиске работы, инструкции для работы, доступ к&nbsp;будущим мастер-классам, доступ к&nbsp;комьюнити с&nbsp;фидбеком</p>
+                    <p>Помощь в&nbsp;поиске работы, инструкции для работы, доступ к&nbsp;будущим мастер-классам, доступ к&nbsp;комьюнити с&nbsp;фидбеком</p>
                   </div>
                 </div>
                 <div className='enroll-feature row'>
@@ -516,16 +501,16 @@ function Main() {
               />
               
               <div className='question-answer'>
-                <h3 className='question'>Мне нужен опыт UX/UI? Или в IT?</h3>
-                <p className='answer'>Нет, курс с нуля. Вам не нужно уметь рисовать, фотошопить и так далее. Но надо быть готовым всему научиться :-)</p>
+                <h3 className='question'>Мне нужен опыт UX/UI? Или в&nbsp;IT?</h3>
+                <p className='answer'>Нет, курс с&nbsp;нуля. Вам не&nbsp;нужно уметь рисовать, фотошопить и&nbsp;так&nbsp;далее. Но надо быть готовым всему научиться :-)</p>
               </div>
               <div className='question-answer'>
-                <h3 className='question'>10 недель — это не мало?</h3>
-                <p className='answer'>Мало! Конечно, лучше учиться 5 лет. Но мы предлагаем вам побыстрее устроиться на работу, а потом уже продолжить учиться. Представьте, что вы пошли в спортзал. Вы начинаете с базовых упражнений и настройке питания, а потом уже переходите к прокачке конкретных мышц. Вот этот курс — это базовые упражнения, с которыми вы можете брать заказы и зарабатывать. А уже потом вы будете прокачивать нужные мышцы-скиллы под конкретные рабочие задачи.</p>
+                <h3 className='question'>10 недель — это не&nbsp;мало?</h3>
+                <p className='answer'>Мало! Конечно, лучше учиться 5&nbsp;лет. Но мы предлагаем вам побыстрее устроиться на работу, а&nbsp;потом уже продолжить учиться. Представьте, что вы пошли в&nbsp;спортзал. Вы начинаете с&nbsp;базовых упражнений и&nbsp;настройке питания, а&nbsp;потом уже переходите к&nbsp;прокачке конкретных мышц. Вот этот курс — это базовые упражнения, с&nbsp;которыми вы можете брать заказы и&nbsp;зарабатывать. А&nbsp;уже потом вы будете прокачивать нужные мышцы-скиллы под конкретные рабочие задачи.</p>
               </div>
               <div className='question-answer'>
                 <h3 className='question'>Сколько дизайнеров в группе?</h3>
-                <p className='answer'>До 20 человек. Группы стартуют от 3 студентов — если набирается меньше, то группа отменяется. Можно записаться на следующий поток.</p>
+                <p className='answer'>До 20 человек. Группы стартуют от 3&nbsp;студентов — если набирается меньше, то группа отменяется. Можно записаться на следующий поток.</p>
               </div>
               <div className='question-answer'>
                 <h3 className='question'>Как оплатить курс?</h3>
@@ -535,13 +520,13 @@ function Main() {
                 <h3 className='question'>Можно ли вернуть деньги?</h3>
                 <p className='answer'>Да, без указания причин. Деньги возвращаются по формуле:</p>
                 <code>(общая сумма - книги) / 10 недель × кол-во оставшихся недель = сумма к возврату</code>
-                <p>Например, если вы заплатили 2000 рублей, то через 5 недель вы можете вернуть 938 рублей:</p>
+                <p>Например, если вы заплатили 2&nbsp;000&nbsp;рублей, то через 5&nbsp;недель вы можете вернуть 938&nbsp;рублей:</p>
                 <code>(2000 - 124) / 10 × 5 = 938</code>
-                <p>Для возврата напишите в телеграм вашему менеджеру или позвоните по любому телефону.</p>
+                <p>Для возврата напишите в телеграм вашему менеджеру или позвоните по&nbsp;любому телефону.</p>
               </div>
               <div className='question-answer'>
                 <h3 className='question'>Почему иногда написано bootcamp.by?</h3>
-                <p className='answer'>На западе учатся в буткемпах — интенсивных курсах. Смысл в том, что вы учитесь 5 дней в неделю, как на работе. Так и задумывалась эта школа, поэтому мы выбрали название Bootcamp. Но в Беларуси мало кто понимает, что это, поэтому мы переименовались в Школу Кадола.</p>
+                <p className='answer'>На западе учатся в&nbsp;буткемпах — интенсивных курсах. Смысл в&nbsp;том, что вы учитесь 5 дней в&nbsp;неделю, как на работе. Так и&nbsp;задумывалась эта школа, поэтому мы выбрали название Bootcamp. Но в&nbsp;Беларуси мало кто понимает, что это, поэтому мы переименовались в&nbsp;Школу Кадола.</p>
               </div>
               
           </Section>
