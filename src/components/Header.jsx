@@ -10,7 +10,7 @@ export default function Header() {
           </div>
           <nav className='row'>
               <div>Наш Instagram</div>
-              <a href="https://instagram.com/bootcamp.by">@bootcamp.by</a>
+              <a href="https://instagram.com/shkolakadola">@shkolakadola</a>
           </nav>
         </div>
     </header>
