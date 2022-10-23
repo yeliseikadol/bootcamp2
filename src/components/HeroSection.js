@@ -33,8 +33,8 @@ export default function HeroSection() {
 
                         <div className='title-section-card-form stack'>
                             <div className='title-section-card-form-text stack'>
-                                <div className='typography-h1 color-purple'>Интенсивный курс</div>
-                                <h1>Веб-дизайнер, UX/UI-дизайнер <br/>за 10&nbsp;недель с&nbsp;нуля</h1>
+                                <div className='caption title-eyebrow'>Интенсивный курс • С нуля</div>
+                                <h1>Веб-дизайн, UX/UI для удалённой работы</h1>
                             </div>
                             <div className='row button-bar'>
                                 <Link 
@@ -43,7 +43,7 @@ export default function HeroSection() {
                                     duration={500}
                                     smooth='true'
                                 >
-                                    Поступить
+                                    Записаться
                                 </Link>
                                 <div className='stack'>
                                     <div className='typography-h4'>504&nbsp;BYN в&nbsp;месяц</div>

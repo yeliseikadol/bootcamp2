@@ -1,4 +1,6 @@
 @import colors
+
+$mobile: 1023px
     
 @font-face 
     font-family: 'tt-wellingtons'
@@ -23,100 +25,86 @@
     font-feature-settings: 'lnum', 'ss01'
     color: $label-primary
 
+
+
+
+
+
 h1, %h1, .typography-h1
     font-size: 56px
-    line-height: 110% //or 62px
+    line-height: 62px
     letter-spacing: -1px
-    font-weight: bold
+    font-weight: 500
     margin: 0
-    color: $text
-    @media (max-width: 1000px)
+    @media (max-width: $mobile)
         font-size: 32px
-        line-height: 120% //or 35px
-        letter-spacing: -0.01em
+        line-height: 40px
+        letter-spacing: 0
 
 h2, %h2, .typography-h2
     font-size: 40px
-    line-height: 120% // or 48px
+    line-height: 48px
     letter-spacing: -1px
-    font-weight: bold
+    font-weight: 500
     margin: 0
-    color: $text
-    @media (max-width: 1000px)
+    @media (max-width: $mobile)
         font-size: 27px
-        line-height: 130% //or 32px
-        letter-spacing: -0.01em
+        line-height: 32px
+        letter-spacing: 0
 
 h3, %h3, .typography-h3
     font-size: 28px
-    line-height: 140% //or 39px
-    font-weight: bold
+    line-height: 40px
+    font-weight: 500
     margin: 0
-    letter-spacing: -0.01em
-    @media (max-width: 1000px)
-        font-size: 22.5px
-        line-height: 120%//or 27px
+    letter-spacing: 0
+    @media (max-width: $mobile)
+        font-size: 22px
+        line-height: 28px
 
 h4, %h4, .typography-h4
-    font-size: 20px
-    line-height: 140%
+    font-size: 19px
+    line-height: 24px
     letter-spacing: 0
-    font-weight: bold
+    font-weight: 500
     margin: 0
-    @media (max-width: 1000px)
-        font-size: 18px
-        line-height: 120%
 
-h5, %h5, .typography-h5
+h5, %h5, .typography-h5, .typography-eyebrow
     font-size: 15px
-    line-height: 140%
+    line-height: 20px
     letter-spacing: 0
     font-weight: bold
     margin: 0
-    @media (max-width: 1000px)
-        font-size: 14px
-        line-height: 120%
+    font-feature-settings: 'pnum' on, 'lnum' on, 'cpsp' on
+    text-transform: uppercase
 
 body, %body, .typography-body
-    font-size: 20px
-    line-height: 140%
+    font-size: 19px
+    line-height: 24px
     letter-spacing: 0
     font-weight: normal
     margin: 0
-    @media (max-width: 1000px)
-        font-size: 16px
-        line-height: 140%
 
 .typography-body2, %body2, caption, .caption, %caption
     font-size: 15px
-    line-height: 140%
-    @media (max-width: 1000px)
-        font-size: 14px
-        line-height: 140%
+    line-height: 20px
 
-.typography-eyebrow
-    font-size: 16px
-    line-height: 120%
-    text-transform: uppercase
-    letter-spacing: 1px
-    @media screen and (max-width: 1000px)
-        font-size: 14px
-        line-height: 140%
+
+
 
 
 p
     margin: 0
 
-button, .typography-button
-    font-size: 20px
-    line-height: 140%
+button, .typography-button, .button
+    font-size: 19px
+    line-height: 24px
     letter-spacing: 0
-    font-weight: bold
+    font-weight: 500
     margin: 0
-
-    @media (max-width: 1000px)
-        font-size: 14px
-        line-height: 120%
+    @media (max-width: $mobile)
+        font-size: 15px
+        line-height: 20px
 
 caption, .caption, %caption
     margin: 0

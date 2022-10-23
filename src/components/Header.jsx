@@ -1,16 +1,22 @@
 import React from 'react'
-import {ReactComponent as Logotype} from '../assets/logo.svg'
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
     <header className='header'>
       <div className="row">
           <div className="logo-container">
-              <Logotype/>
+              <div className='logo'><h2>Школа Кадола</h2></div>
           </div>
           <nav className='row'>
-              <div>Наш Instagram</div>
-              <a href="https://instagram.com/shkolakadola">@shkolakadola</a>
+            <Link 
+              className='button button-small'
+              to='EnrollSection' 
+              duration={500}
+              smooth='true'
+              >
+              Записаться
+            </Link>
           </nav>
         </div>
     </header>

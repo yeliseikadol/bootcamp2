@@ -1,10 +1,19 @@
 import React from 'react'
-import {ReactComponent as AnnounceIcon} from '../assets/icons/announce.svg'
+import { Link } from "react-scroll";
 
 export default function TopLine() {
     return (
         <div className='top-line'>
-            <div><AnnounceIcon/>Открыта запись в группы с 21 ноября. −30% за запись до 30 октября.</div>
+            <Link
+                className='top-line-link'
+              to='EnrollSection' 
+              duration={500}
+              smooth='true'
+              >
+              −30% при записи до 30&nbsp;октября →
+            </Link>
         </div>
     )
 }
+
+
