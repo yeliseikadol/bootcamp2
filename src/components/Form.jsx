@@ -12,16 +12,16 @@ export default function Form() {
       </div>
       <div className='price-calculation'>
         <div className='price-calculation-row'>
-            <div>Полная стоимость</div> 
-            <div>2&nbsp;160&nbsp;BYN</div>
+            <div className='caption'>Полная стоимость</div> 
+            <div className='caption'>2&nbsp;160&nbsp;BYN</div>
         </div>
         <div className='price-calculation-row'>
-            <div>−30% за запись до 30&nbsp;октября</div> 
-            <div>−648&nbsp;BYN</div>
+            <div className='caption'>−30% до 30&nbsp;октября</div> 
+            <div className='caption'>−648&nbsp;BYN</div>
         </div>
         <div className='price-calculation-row'>
-            <div>Всего</div> 
-            <div>1&nbsp;512&nbsp;BYN</div>
+            <div className='caption'>Всего</div> 
+            <div className='caption'>1&nbsp;512&nbsp;BYN</div>
         </div>
   </div>
 

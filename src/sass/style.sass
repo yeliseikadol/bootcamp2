@@ -923,17 +923,14 @@ input, select
     @extend .typography-body
     padding: 12px
     background: $field
-    border: 0px
-    border-radius: $radius-m $radius-m 0 0
+    border: 1px solid $transparent
+    border-radius: $radius-m
     transform: translateZ(0)
-    border-bottom: 1px solid $border-strong
     -webkit-appearance: none
     &:focus
         outline: 0
-        border-bottom: 1px solid $border-focus
-
-.input-label
-    @extend .typography-h4
+        border: 1px solid $border-focus
+        background: $background
 
 //media query
 
@@ -1107,3 +1104,21 @@ input, select
 
 .title-eyebrow
     margin-bottom: 16px
+
+
+
+
+
+
+// enroll-form
+.input-label
+    @extend .caption
+
+.enroll-form form
+    gap: 32px
+
+
+
+
+.hidden
+    display: none

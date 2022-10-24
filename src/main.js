@@ -63,7 +63,7 @@ function Main() {
             <div className='why-us-row'>
               <div className='why-us__block practice'>
                 <div className='why-us__image-practice'></div>
-                  <div className='why-us__description-practice typography-body2'>Вы будете практиковаться с преподавателем 2-3 раза в&nbsp;неделю, а&nbsp;учить теорию по книжкам.</div>
+                  <div className='why-us__description-practice typography-body2'>Вы будете практиковаться с&nbsp;преподавателем 2-3 раза в&nbsp;неделю, а&nbsp;учить теорию по книжкам.</div>
               </div>
               <div className='why-us__block why-us-certificate'>
                 <div className='why-us__image-certificate'></div>
@@ -104,7 +104,7 @@ function Main() {
           <div className='cards-grid features'>
 
             <div className='cards-row'>
-              <div className='card card-2-1 feature-1'>Вы будете практиковаться с преподавателем 2 раза в&nbsp;неделю, а&nbsp;учить теорию по крутым книжкам в&nbsp;удобное время</div>
+              <div className='card card-2-1 feature-1'>Вы будете практиковаться с&nbsp;преподавателем 2 раза в&nbsp;неделю, а&nbsp;учить теорию по крутым книжкам в&nbsp;удобное время</div>
               <div className='card card-1-2 feature-2'>Вы получите сертификат IBM, который сможете прикрепить к&nbsp;профилю LinkedIn</div>
             </div>
 
@@ -225,7 +225,7 @@ function Main() {
               <CurriculumWeek
                 week='1 неделя'
                 title='Понять задачу'
-                text='Учёба начинается с погружения в&nbsp;мир пользователей и&nbsp;бизнес заказчика. Здесь вы научитесь быстро выбирать проблемы пользователей, которые будете решать.'
+                text='Учёба начинается с&nbsp;погружения в&nbsp;мир пользователей и&nbsp;бизнес заказчика. Здесь вы научитесь быстро выбирать проблемы пользователей, которые будете решать.'
                 task='Задание. Написать понимание задачи.'
               />
               <CurriculumWeek
@@ -237,7 +237,7 @@ function Main() {
               <CurriculumWeek
                 week='3 неделя'
                 title='Типографика и&nbsp;вёрстка'
-                text='Теперь решение надо отобразить в&nbsp;виде экранов. На этой неделе вы научитесь собирать опрятные макеты с помощью заголовков, текста и&nbsp;изображений.'
+                text='Теперь решение надо отобразить в&nbsp;виде экранов. На этой неделе вы научитесь собирать опрятные макеты с&nbsp;помощью заголовков, текста и&nbsp;изображений.'
                 task='Задание. Сделать серию экранов.'
               />
             </div>
@@ -314,7 +314,7 @@ function Main() {
           <SectionHeader
             eyebrow='Итоговый результат'
             title='Итог — вы готовы работать'
-            text1='Наша задача, чтобы вы могли работать и&nbsp;зарабатывать. Поэтому упраж­не­ния, зада­ния и&nbsp;темы наце­лены именно на&nbsp;технические скиллы, а&nbsp;не общую дизайнерскую обра­зо­ван­ность. Кроме скиллов, мы помогаем с поиском работы, прохождением собеседований, выполнением тестовых заданий. Сообщество дизайнеров всегда поможет найти лучшее решение! Кстати, наши преподаватели имеют опыт преподавания в&nbsp;других школах и&nbsp;вот несколько примеров работ их выпускников:'
+            text1='Наша задача, чтобы вы могли работать и&nbsp;зарабатывать. Поэтому упраж­не­ния, зада­ния и&nbsp;темы наце­лены именно на&nbsp;технические скиллы, а&nbsp;не общую дизайнерскую обра­зо­ван­ность. Кроме скиллов, мы помогаем с&nbsp;поиском работы, прохождением собеседований, выполнением тестовых заданий. Сообщество дизайнеров всегда поможет найти лучшее решение! Кстати, наши преподаватели имеют опыт преподавания в&nbsp;других школах и&nbsp;вот несколько примеров работ их выпускников:'
             />
             <div className='cards-grid'>
               <div className='cards-row'>
@@ -346,7 +346,7 @@ function Main() {
           <SectionHeader
             eyebrow='Преподаватели'
             title='Учитесь у опытных дизайнеров из Беларуси'
-            text1='В Беларуси есть специфика — дизайнеры работают либо с международными компаниями, либо мелким локальным бизнесом. Как правило, удалённо. А в&nbsp;России учат дизайнеров под местные компании, типа Mail.ru, которые не берут на&nbsp;удалёнку начинающих белорусов.'
+            text1='В Беларуси есть специфика — дизайнеры работают либо с&nbsp;международными компаниями, либо мелким локальным бизнесом. Как правило, удалённо. А в&nbsp;России учат дизайнеров под местные компании, типа Mail.ru, которые не берут на&nbsp;удалёнку начинающих белорусов.'
             text2='Поэтому нам важно, чтобы вы учились у тех, кто работает на&nbsp;международные компании удалённо из Беларуси или, по каким-то причинам, релоцировался и&nbsp;работает из Турции, Грузии или Польши. Эти преподаватели сами прошли тот путь, который предстоит вам, поэтому понимают что важно, а&nbsp;что нет, именно для Беларуси.'
             />
 
@@ -407,54 +407,12 @@ function Main() {
             />
         </Section>
 
-
-        <Section className='section-groups'>
-          <div id='EnrollSection'></div>
+        <Section className='section-enroll'>
+        <div id='EnrollSection'></div>
           <SectionHeader
             eyebrow='Стоимость и&nbsp;группы'
-            title='Ближайшие группы'
-            text1='Группы стартуют раз в&nbsp;2 месяца.'
-            />
-            <div className='group-cards-row'>
-
-              <div className='group-card'>
-                <div className='group-card-dates-section'>
-                  <h4 className='group-card-title'>UX/UI дизайн с нуля</h4>
-                  <div className='group-card-dates caption'>Ноя 21 — Фев 10</div>
-                  <div className='group-card-time caption'>Вт, Чт 19:00—20:45 Минск</div>
-                </div>
-                <div className='group-card-tutor-section'>
-                  <div className='img group-card-tutor-avatar group-card-tutor-avatar-oksanavorobey'/>
-                  <div className='group-card-tutor-text-section'>
-                    <div className='group-card-tutor-name caption'>Оксана Воробьёва</div>
-                    <div className='group-card-tutor-description caption'>UX/UI преподаватель, Минск</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className='group-card'>
-                <div className='group-card-dates-section'>
-                  <h4 className='group-card-title'>UX/UI дизайн с нуля</h4>
-                  <div className='group-card-dates caption'>Ноя 21 — Фев 10</div>
-                  <div className='group-card-time caption'>Пн, Ср 17:00—18:45 Минск</div>
-                </div>
-                <div className='group-card-tutor-section'>
-                  <div className='img group-card-tutor-avatar group-card-tutor-avatar-yeliseikadol'/>
-                  <div className='group-card-tutor-text-section'>
-                    <div className='group-card-tutor-name caption'>Елисей Кадол</div>
-                    <div className='group-card-tutor-description caption'>UX/UI преподаватель, Минск</div>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-        </Section>
-
-        
-        <Section className='section-enroll add-bottom'>
-          <SectionHeader
             title='Простые и&nbsp;прозрачные платежи'
-            text1='Никаких дополнительных платежей: в&nbsp;стоимость курса включены программы, книги и&nbsp;дополнительные материалы. От вас требуется только ноутбук с интернетом.'
+            text1='Никаких дополнительных платежей: в&nbsp;стоимость курса включены программы, книги и&nbsp;дополнительные материалы. От вас требуется только ноутбук с&nbsp;интернетом.'
             />
             <div className='enroll-row row'>
               <Form/>
@@ -490,6 +448,49 @@ function Main() {
               </div>
             </div>
         </Section>
+
+        <Section className='section-groups add-bottom'>          
+          <SectionHeader          
+            title='Ближайшие группы'
+            text1='Группы стартуют раз в&nbsp;2 месяца.'
+            />
+            <div className='group-cards-row'>
+
+              <div className='group-card'>
+                <div className='group-card-dates-section'>
+                  <h4 className='group-card-title'>UX/UI дизайн с&nbsp;нуля</h4>
+                  <div className='group-card-dates caption'>Ноя 21 — Фев 10</div>
+                  <div className='group-card-time caption'>Вт, Чт 19:00—20:45 Минск</div>
+                </div>
+                <div className='group-card-tutor-section'>
+                  <div className='img group-card-tutor-avatar group-card-tutor-avatar-oksanavorobey'/>
+                  <div className='group-card-tutor-text-section'>
+                    <div className='group-card-tutor-name caption'>Оксана Воробьёва</div>
+                    <div className='group-card-tutor-description caption'>UX/UI преподаватель, Минск</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className='group-card'>
+                <div className='group-card-dates-section'>
+                  <h4 className='group-card-title'>UX/UI дизайн с&nbsp;нуля</h4>
+                  <div className='group-card-dates caption'>Ноя 21 — Фев 10</div>
+                  <div className='group-card-time caption'>Пн, Ср 17:00—18:45 Минск</div>
+                </div>
+                <div className='group-card-tutor-section'>
+                  <div className='img group-card-tutor-avatar group-card-tutor-avatar-yeliseikadol'/>
+                  <div className='group-card-tutor-text-section'>
+                    <div className='group-card-tutor-name caption'>Елисей Кадол</div>
+                    <div className='group-card-tutor-description caption'>UX/UI преподаватель, Минск</div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+        </Section>
+
+        
+        
 
         
 
