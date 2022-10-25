@@ -37,14 +37,7 @@ export default function HeroSection() {
                                 <h1>Веб-дизайн, UX/UI для удалённой работы</h1>
                             </div>
                             <div className='row button-bar'>
-                                <Link 
-                                    className='button'
-                                    to='EnrollSection' 
-                                    duration={500}
-                                    smooth='true'
-                                >
-                                    Записаться
-                                </Link>
+                                    <a href='/enroll' className='button'>Записаться</a>
                                 <div className='stack'>
                                     <div className='typography-h4'>504&nbsp;BYN в&nbsp;месяц</div>
                                     <div className='typography-body2'>Всего 1&nbsp;512&nbsp;BYN</div>

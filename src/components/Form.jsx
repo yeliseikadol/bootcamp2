@@ -29,7 +29,7 @@ export default function Form() {
 
 
 
-      <form 
+      {/*<form 
         className='stack' 
         name="contact" 
         method="POST" 
@@ -75,7 +75,8 @@ export default function Form() {
         </div>
         <Button type='submit'>Записаться</Button>
         <p className='typography-body2'>После нажатия на кнопку с вами свяжется менеджер. Мы работаем по будням с 10 до 18.</p>
-      </form>
+  </form>*/}
+  <a href='/enroll' className='button button-big'>Записаться</a>
     </div>
   )
 }

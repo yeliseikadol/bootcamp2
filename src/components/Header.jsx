@@ -9,14 +9,7 @@ export default function Header() {
               <div className='logo'><h2>Школа Кадола</h2></div>
           </div>
           <nav className='row'>
-            <Link 
-              className='button button-small'
-              to='EnrollSection' 
-              duration={500}
-              smooth='true'
-              >
-              Записаться
-            </Link>
+          <a href='/enroll' className='button button-small'>Записаться</a>
           </nav>
         </div>
     </header>

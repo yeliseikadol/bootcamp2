@@ -1,12 +1,11 @@
 import React, {useState} from 'react'
-import Button from './Button'
 import Section from './Section'
 import SectionHeader from './SectionHeader'
 
 export default function SeparatedForm() {   
 
-const[hasPromocode,setPromocode] = useState(true)
-const[hasCertificate,setCertificate] = useState(true)
+const[hasPromocode,setPromocode] = useState(false)
+const[hasCertificate,setCertificate] = useState(false)
 
 
   return (
@@ -68,38 +67,27 @@ const[hasCertificate,setCertificate] = useState(true)
             </select>
         </div>
 
+        <div className='checkbox-group'>
+        <div className='checkbox-label' onClick={()=>setCertificate(!hasCertificate)}><i className={hasCertificate?'checkbox checkbox-checked':'checkbox'}/><div>У меня есть сертификат других курсов</div></div>
+        </div>
 
-        <div onClick={()=>setCertificate(!hasCertificate)}>У меня есть сертификат других курсов</div>
-        { hasCertificate ?<div className='flex-column input-container promocode-block'>  
-            <label for='promocode' className='input-label'>Сертификат</label>
-            <input
-                    name='promocode'
-                    type='text'
-                    placeholder=""
-                    />
-            </div>:null
-        }
-        
-
-
-        <div onClick={()=>setPromocode(!hasPromocode)}>У меня есть промокод</div>
+        <div className='checkbox-group'>
+        <div className='checkbox-label' onClick={()=>setPromocode(!hasPromocode)}><i className={hasPromocode?'checkbox checkbox-checked':'checkbox'}/><div>У меня есть промокод</div></div>
         { hasPromocode ?<div className='flex-column input-container promocode-block'>  
-            <label for='promocode' className='input-label'>Промокод</label>
             <input
                     name='promocode'
                     type='text'
-                    placeholder=""
+                    placeholder="Введите промокод"
                     />
             </div>:null
         }
+        </div>
 
-        {/*<a href={hasCertificate && hasPromocode ?'https://epos.hutkigrosh.by/pay/pay?param=19190-1-30-3-4#00020101021132490010by.raschet01074440631101419190-1-30-3-412021133360014by.epos.unipay031419190%3B1%3B30-3-4520489995802BY5911IPKadolE.N.6005Minsk5406360.00530393363043B07':hasCertificate ? 'https://epos.hutkigrosh.by/pay/pay?param=19190-1-30-3#00020101021132470010by.raschet01074440631101219190-1-30-312021133340014by.epos.unipay031219190%3B1%3B30-3520489995802BY5911IPKadolE.N.6005Minsk5406432.0053039336304DA30':hasPromocode ? 'https://epos.hutkigrosh.by/pay/pay?param=19190-1-30-4#00020101021132470010by.raschet01074440631101219190-1-30-412021133340014by.epos.unipay031219190%3B1%3B30-4520489995802BY5911IPKadolE.N.6005Minsk5406432.00530393363041E49':'https://epos.hutkigrosh.by/pay/pay?param=19190-1-30#00020101021132450010by.raschet01074440631101019190-1-3012021133320014by.epos.unipay031019190%3B1%3B30520489995802BY5911IPKadolE.N.6005Minsk5406504.0053039336304F005'}>
-            <button type='submit'>Записаться</button>
-        </a>*/}
+        <a className='button button-big' href={hasCertificate && hasPromocode ?'https://epos.hutkigrosh.by/pay/pay?param=19190-1-30-3-4#00020101021132490010by.raschet01074440631101419190-1-30-3-412021133360014by.epos.unipay031419190%3B1%3B30-3-4520489995802BY5911IPKadolE.N.6005Minsk5406360.00530393363043B07':hasCertificate ? 'https://epos.hutkigrosh.by/pay/pay?param=19190-1-30-3#00020101021132470010by.raschet01074440631101219190-1-30-312021133340014by.epos.unipay031219190%3B1%3B30-3520489995802BY5911IPKadolE.N.6005Minsk5406432.0053039336304DA30':hasPromocode ? 'https://epos.hutkigrosh.by/pay/pay?param=19190-1-30-4#00020101021132470010by.raschet01074440631101219190-1-30-412021133340014by.epos.unipay031219190%3B1%3B30-4520489995802BY5911IPKadolE.N.6005Minsk5406432.00530393363041E49':'https://epos.hutkigrosh.by/pay/pay?param=19190-1-30#00020101021132450010by.raschet01074440631101019190-1-3012021133320014by.epos.unipay031019190%3B1%3B30520489995802BY5911IPKadolE.N.6005Minsk5406504.0053039336304F005'}>
+            {hasCertificate && hasPromocode ? 'Оплатить: 360 BYN':hasCertificate?'Оплатить: 432 BYN':hasPromocode?'Оплатить: 432 BYN':'Оплатить: 504 BYN'}
+        </a>
 
-        <Button type='submit'>Записаться</Button>
-
-        <p className='typography-body2'>После нажатия на кнопку с вами свяжется менеджер. Мы работаем по будням с 10 до 18.</p>
+        <p className='typography-body2'>После нажатия вы попадёте на форму оплаты.</p>
 
 
         
