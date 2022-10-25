@@ -1,6 +1,5 @@
 import React from 'react'
 import Section from './Section'
-import { Link } from "react-scroll";
 
 
 export default function HeroSection() {
