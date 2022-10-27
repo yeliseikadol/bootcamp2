@@ -53,7 +53,7 @@ const[hasCertificate,setCertificate] = useState(false)
         </div>
 
         <div className='flex-column input-container'>
-            <label for='tel' className='input-label'>E-mail для доступа к книгам</label>
+            <label for='tel' className='input-label'>E-mail для доступа к книгам и оплаты</label>
             <input
                 name='email'
                 type='email'
@@ -95,12 +95,11 @@ const[hasCertificate,setCertificate] = useState(false)
             </div>:null
         }
         </div>
-
+        <div className='flex-column enroll-sum'><div className='typography-h3'>К оплате: {hasCertificate && hasPromocode ? '360 BYN':hasCertificate?'432 BYN':hasPromocode?'432 BYN':'504 BYN'}</div>
+        <div className='typography-body2'>Ссылка на оплату придёт на почту.</div></div>
         <button className='button button-big' type='submit'>
-            {hasCertificate && hasPromocode ? 'Оплатить: 360 BYN':hasCertificate?'Оплатить: 432 BYN':hasPromocode?'Оплатить: 432 BYN':'Оплатить: 504 BYN'}
+            Записаться
         </button>
-
-        <p className='typography-body2'>После нажатия вы попадёте на форму оплаты.</p>
 
 
         
