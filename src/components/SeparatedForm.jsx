@@ -30,8 +30,6 @@ const[hasCertificate,setCertificate] = useState(false)
         <input type="hidden" name="form-name" value="contact" />
         <div hidden>
           <input name="bot-field"/>
-
-
         </div>
         
         
