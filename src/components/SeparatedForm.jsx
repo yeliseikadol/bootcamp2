@@ -27,7 +27,17 @@ const[hasCertificate,setCertificate] = useState(false)
         onSubmit="submit"
         >
         <input type="hidden" name="form-name" value="contact" />
-        
+        <div hidden>
+          <input name="bot-field"/>
+
+          {/*<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="text" name="name">
+            <input type="tel" name="telegram">
+            <input type="email" name="email">
+            <select name="class">
+            <input type="text" name="promocode">
+  </form>*/}
+        </div>
         
         
         <div className='flex-column input-container'>  
