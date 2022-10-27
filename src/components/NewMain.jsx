@@ -2,7 +2,7 @@ import React from 'react'
 import './styles-new.sass'
 
 export default function NewMain() {
-    const SrcWebm = "../titlevideo.webm"
+    /*const SrcWebm = "../titlevideo.webm"
     const SrcM4 = "../titlevideo-2.mp4"
 
     var EmbedVideo = function(props) {
@@ -21,7 +21,7 @@ export default function NewMain() {
                 
           ` }}></div>
         )
-    }
+    }*/
 
 
 
