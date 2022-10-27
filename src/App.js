@@ -7,6 +7,7 @@ import NewMain from './components/NewMain';
 import { ExternalLink } from 'react-external-link';
 import Section from './components/Section';
 import Payment30 from './components/Payment30';
+import NameForm from './components/FormNew';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/enroll' element={<SeparatedForm/>}></Route>
         <Route path='/new' element={<NewMain/>}></Route>
         <Route path='/payment30' element={<Payment30/>}></Route>
+        <Route path='/formnew' element={<NameForm/>}></Route>
           <Route
           path='/payment30-3'
           element={<Section><h1>Итого ваш заказ</h1>
