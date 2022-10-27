@@ -4,6 +4,7 @@ import SectionHeader from './SectionHeader'
 
 export default function SeparatedForm() {   
 
+  
 const[hasPromocode,setPromocode] = useState(false)
 const[hasCertificate,setCertificate] = useState(false)
 
@@ -30,13 +31,7 @@ const[hasCertificate,setCertificate] = useState(false)
         <div hidden>
           <input name="bot-field"/>
 
-          {/*<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name">
-            <input type="tel" name="telegram">
-            <input type="email" name="email">
-            <select name="class">
-            <input type="text" name="promocode">
-  </form>*/}
+
         </div>
         
         
