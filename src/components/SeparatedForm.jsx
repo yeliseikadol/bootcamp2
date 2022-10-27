@@ -21,7 +21,10 @@ const[hasCertificate,setCertificate] = useState(false)
       <form 
         className='stack' 
         method='POST'
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
         action={ hasCertificate && hasPromocode ? '/payment30-3-4' : hasCertificate ? '/payment30-3' : hasPromocode ? '/payment30-4' : '/payment30' }
+        onSubmit="submit"
         >
         <input type="hidden" name="form-name" value="contact" />
         
@@ -39,7 +42,7 @@ const[hasCertificate,setCertificate] = useState(false)
         <div className='flex-column input-container'>
             <label for='tel' className='input-label'>Профиль в Telegram для связи</label>
             <input
-                name='tel'
+                name='telegram'
                 type='tel'
                 placeholder="@yeliseikadol"
                 required
