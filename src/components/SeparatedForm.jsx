@@ -94,12 +94,22 @@ const[hasCertificate,setCertificate] = useState(false)
             </div>:null
         }
         </div>
+
+        <input
+                    name='product'
+                    type='text'
+                    value={hasCertificate && hasPromocode?'payment30-3-4': hasCertificate?'payment30-3':hasPromocode?'payment30-4':'payment30'}
+                    hidden
+                    />
+
+
         <div className='flex-column enroll-sum'><div className='typography-h3'>К оплате: {hasCertificate && hasPromocode ? '360 BYN':hasCertificate?'432 BYN':hasPromocode?'432 BYN':'504 BYN'}</div>
         <div className='typography-body2'>Ссылка на оплату придёт на почту.</div></div>
         <button className='button button-big' type='submit'>
             Записаться
         </button>
 
+        
 
         
 
