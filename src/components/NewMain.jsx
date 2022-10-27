@@ -27,7 +27,7 @@ export default function NewMain() {
 
   return (
     <div className='layout'>
-        <div className='section section-hero'>
+        {/*<div className='section section-hero'>
             <div className='section-header section-header-hero'>
                 <h1>Веб-дизайн для удалённой работы</h1>
                 <div>С нуля • 10 недель</div>
@@ -133,7 +133,7 @@ export default function NewMain() {
 
 
 
-    {/*<div className='section'>
+    <div className='section'>
                 <div className='section-header'>
                     <h4></h4>
                     <h2></h2>
