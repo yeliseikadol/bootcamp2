@@ -24,7 +24,6 @@ const[hasCertificate,setCertificate] = useState(false)
         method='POST'
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        action={ hasCertificate && hasPromocode ? '/payment30-3-4' : hasCertificate ? '/payment30-3' : hasPromocode ? '/payment30-4' : '/payment30' }
         onSubmit="submit"
         >
         <input type="hidden" name="form-name" value="contact" />
