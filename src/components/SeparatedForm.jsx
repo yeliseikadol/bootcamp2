@@ -79,6 +79,13 @@ const[hasCertificate,setCertificate] = useState(false)
         <div className='checkbox-label' onClick={()=>setCertificate(!hasCertificate)}><i className={hasCertificate?'checkbox checkbox-checked':'checkbox'}/><div>У меня есть сертификат других курсов</div></div>
         </div>
 
+        <input
+                    name='certificate'
+                    type='text'
+                    value={hasCertificate?'есть сертификат':null}
+                    hidden
+                    />
+
         <div className='checkbox-group'>
         <div className='checkbox-label' onClick={()=>setPromocode(!hasPromocode)}><i className={hasPromocode?'checkbox checkbox-checked':'checkbox'}/><div>У меня есть промокод</div></div>
         { hasPromocode ?<div className='flex-column input-container promocode-block'>  
