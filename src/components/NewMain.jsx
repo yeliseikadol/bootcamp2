@@ -103,8 +103,8 @@ export default function NewMain() {
                 <h1>Веб-дизайн для удалённой работы</h1>
                 <p>Интенсивный курс дизайна для получения работы и выполнения заказов в Беларуси или за рубежом.</p>
                 <div className='bc-row gap-24'>
-                    <a className='bc-button' href='/enroll'>Записаться</a>
-                    <div className=' bc-column '>
+                    <a className='bc-button' href='/bc-enroll'>Записаться</a>
+                    <div className='bc-column'>
                         <div className='bc-typography-body2'>520 бел. руб.<br/>в месяц</div>
                     </div>      
                 </div>        
@@ -378,7 +378,7 @@ export default function NewMain() {
                 </div>
             </div>
 
-            <a href='/enroll' className='bc-button'>Записаться</a>
+            <a href='/bc-enroll' className='bc-button'>Записаться</a>
 
             <div className='section-card'>
                 <div className='section-card-content'>
@@ -436,7 +436,7 @@ export default function NewMain() {
                     </div>
                     
                 </div>   
-                <a href='/enroll' className='bc-button bc-button-secondary'>Записаться</a>             
+                <a href='/bc-enroll' className='bc-button bc-button-secondary'>Записаться</a>             
             </div>
 
             <div className='section-card'>
@@ -460,7 +460,7 @@ export default function NewMain() {
                     </div>
                      
                 </div>   
-                <a href='/enroll' className='bc-button bc-button-secondary'>Записаться</a>
+                <a href='/bc-enroll' className='bc-button bc-button-secondary'>Записаться</a>
             </div>
 
         </div>
