@@ -1,22 +1,155 @@
+@import url('https://use.typekit.net/izu7zpv.css')
+
+$space-4: 4px
+$space-8: 8px
+$space-16: 16px
+$space-24: 24px
+$space-32: 32px
+$space-64: 64px
+
+$radius-4: 4px
+$radius-6: 6px
+
+.gap-8
+    gap: $space-8
+.gap-16
+    gap: $space-16
+.gap-24
+    gap: $space-24
+.gap-32
+    gap: $space-32
+.gap-64
+    gap: $space-64
+
+.bc-row
+    display: flex
+    align-items: flex-start
+    &-no-wrap
+        @media screen and (max-width: 1000px)
+        flex-direction: row
+        flex-wrap: nowrap
+
+.bc-column
+    display: flex
+    flex-direction: column
+
+$white: #ffffff   
+$cool-90: #17191a
+$cool-80: #2b2d2e
+$cool-50: #92999d
+$cool-40: #D0D7DB
+$cool-5: #EEF4F6
+$pink-50: #FF408A
+$pink-60: #D71E66
+$pink-70: #A20C47
+$red-50: #F44040
+$green-10: #F3FDDB
+$yellow-10: #FFFCDB
+$pink-5: #FFF2F7
+$blue-5: #D4F0FF
+
+$text-primary: $cool-80
+$text-secondary: $cool-50
+$text-primary-inverse: $white
+$text-secondary-inverse: $cool-50
+$text-interactive: $pink-60
+$text-disabled: $cool-50
+
+$background-primary: $white
+$background-secondary: $cool-5
+$background-inverse: $cool-90
+$background-interactive: $pink-50
+$background-interactive-medium: $pink-60
+$background-interactive-strong: $pink-70
+$background-accent-1: $green-10
+$background-accent-2: $yellow-10
+$background-accent-3: $pink-5
+$background-accent-4: $blue-5
+
+$border-primary: $cool-40
+
+
 //typography
 
-body
+body, p, div, .bc-typography-body
     font-size: 18px
-    line-height: 1.5
-.bc-button
-    font-size: 16px
-    line-height: 1
+    line-height: 27px
     font-weight: 500
+    font-family: 'TT Wellingtons', sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-feature-settings: 'lnum', 'ss01'
+
+a, .bc-typography-link
+    text-decoration: underline
+
+caption, .bc-typography-body2
+    font-size: 16px
+    line-height: 24px
+
+button, .bc-typography-button
+    font-size: 16px
+    line-height: 16px
+    font-weight: bold
+    letter-spacing: -0.01em
+
+h1, .bc-typography-h1
+    font-weight: 600
+    font-size: 48px
+    line-height: 56px
+    font-feature-settings: 'pnum' on, 'lnum' on
+    letter-spacing: -0.04em
+    & *
+        letter-spacing: initial
+
+h2, .bc-typography-h2
+    font-weight: 600
+    font-size: 26px
+    line-height: 36px
+    font-feature-settings: 'pnum' on, 'lnum' on
+
+h3, .bc-typography-h3
+    font-weight: 600
+    font-size: 20px
+    line-height: 29px
+    font-feature-settings: 'pnum' on, 'lnum' on
+
+.bc-typography-h4
+    font-weight: 400
+    font-size: 26px
+    line-height: 26px
+    font-family: 'Verveine', sans-serif
+
+
+
 
 //colors
 
+a
+    color: $text-interactive
+
+
 //molecules
 .bc-button
+    @extend .bc-typography-button
     display: flex
-    padding: 16px 24px
-    border-radius: 10px
-    background: #000000
-    color: #ffffff
+    padding: $space-16 $space-24
+    border-radius: $radius-6
+    background: $background-interactive
+    color: $text-primary-inverse
+    text-decoration: none
+    justify-content: center
+    cursor: pointer
+    width: fit-content
+    &:hover
+        background: $background-interactive-medium
+    &:active
+        color: $text-primary-inverse
+        background: $background-interactive-strong
+    &-secondary
+        background: $background-secondary
+        color: $text-primary
+
 
 //layout
 .layout
@@ -27,29 +160,27 @@ body
     flex-direction: column
     gap: 64px
     padding: 64px 32px
-.flex-row
-    display: flex
-    flex-direction: row
-    align-items: flex-start
-.flex-column
-    display: flex
-    flex-direction: column
-.flex-gap-16
-    gap: 16px
-.flex-gap-32
-    gap: 32px
 
 //card
 .section-header
     display: flex
     flex-direction: column
     gap: 18px
+
+.section-header-hero
+    gap: $space-32
+
 .section-card
     display: flex
     flex-direction: column
-    gap: 16px
-.section-header-hero
-    gap: 32px
+    gap: $space-32
+
+.section-card-content
+    display: flex
+    flex-direction: column
+    gap: $space-16
+
+
 
 
 //components
@@ -57,8 +188,135 @@ body
     background: black
 .bc-video
     font-size: 0
+    & > *
+        border-radius: $radius-4
 .section-hero *
-    color: white
-.section-hero .bc-button
-    background: white
-    color: black
+    color: $white
+
+
+.sale-badge
+    padding-left: $space-16
+    padding-right: $space-16
+    padding-top: $space-8
+    padding-bottom: $space-4
+    flex-grow: 1
+    border-radius: $radius-4
+    &-active
+        background: $background-accent-2
+    &-active div
+        color: $text-primary
+
+.section-inverse
+    background: $background-inverse
+    & *
+        color: $text-primary-inverse
+
+.section-sales
+    padding: 0 32px 64px
+    background: $background-inverse
+
+img
+    border-radius: $radius-4
+
+.section-certificates
+    padding-left: 0 
+    padding-right: 0 
+    & .section-header
+        padding-left: $space-32
+        padding-right: $space-32
+
+.section-card-certificates
+    padding-left: $space-32
+    padding-right: $space-32
+    overflow-x: scroll
+    flex-wrap: nowrap
+    -webkit-overflow-scrolling: touch
+
+.price-old
+    text-decoration: none
+    position: relative
+    width: fit-content
+    &::after
+        border-bottom: 1px solid $red-50
+        content: ""
+        left: -2px
+        margin-top: -1px
+        position: absolute
+        right: -2px
+        top: 50%
+
+.price-future, .price-future > *
+    color: $text-secondary-inverse
+
+.list-item-title
+    flex: none
+    flex-grow: 1
+
+.list-item-details
+    flex: none
+
+
+.disabled
+    color: $text-disabled
+
+.tab
+    padding: 0 $space-16
+    width: fit-content
+    border-radius: $radius-4
+    height: 48px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &-active
+        background: $background-secondary
+
+.schedule-day
+    width: 32px
+    height: 32px
+    display: flex
+    align-content: center
+    align-items: center
+    justify-content: center
+    background: $background-accent-1
+    border-radius: 16px
+    &-disabled
+        background: $background-secondary
+        color: $text-disabled
+
+.flex-grow-1
+    flex-grow: 1
+
+.row-center
+    align-content: center
+    align-items: center
+
+.horizontal-center
+    align-items: center
+
+.bc-header
+    padding: 0
+    overflow: hidden
+    background: $background-inverse
+    position: initial
+.bc-menu
+    -webkit-overflow-scrolling: touch
+    padding: 16px 32px
+    overflow-x: scroll
+    flex-wrap: nowrap
+.bc-menu-item
+    color: $text-secondary-inverse
+    white-space: nowrap
+    text-decoration: none
+
+.logo-box
+    padding: 16px 32px
+
+.bc-footer a
+    text-decoration: none
+
+.section-accent-1
+    background: $background-accent-1
+.section-accent-2
+    background: $background-accent-2
+.section-accent-3
+    background: $background-accent-3
