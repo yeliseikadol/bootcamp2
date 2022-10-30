@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-import Section from './Section'
-import SectionHeader from './SectionHeader'
 
 export default function SeparatedForm() {   
 
