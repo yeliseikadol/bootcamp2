@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles-new.sass'
+import '../sass/styles-new.sass'
 import { Link } from "react-scroll";
 import {ReactComponent as Logo} from '../assets/images/logo-inverse.svg'
 

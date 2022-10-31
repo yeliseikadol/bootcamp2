@@ -9,7 +9,7 @@ const[hasCertificate,setCertificate] = useState(false)
 
   return (
     <div className='enroll-form section'>
-        <a href='/new'>Назад</a>
+        <a href='/'>Назад</a>
         <div className='section-header'>
             
             <h4 className='bc-typography-h4'>Записаться</h4>
