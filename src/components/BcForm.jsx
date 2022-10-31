@@ -101,7 +101,7 @@ const[hasCertificate,setCertificate] = useState(false)
                     />
 
 
-        <div className='flex-column enroll-sum'><div className='typography-h3'>К оплате: {hasCertificate && hasPromocode ? '360 BYN':hasCertificate?'432 BYN':hasPromocode?'432 BYN':'504 BYN'}</div>
+        <div className='flex-column enroll-sum'><div className='typography-h3'>К оплате: {hasCertificate && hasPromocode ? '468 BYN':hasCertificate?'540 BYN':hasPromocode?'540 BYN':'612 BYN'}</div>
 
         <div className='typography-body2'>Ссылка на оплату придёт на почту.</div></div>
         <button className='bc-button' type='submit'>

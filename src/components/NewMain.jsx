@@ -34,6 +34,7 @@ export default function NewMain() {
             <div className='logo-box'>
                 <Logo/>
             </div>
+            <div className='menu-box'>
             <div className='bc-menu bc-row gap-32'>
                 <Link
                     className='bc-menu-item'
@@ -93,6 +94,7 @@ export default function NewMain() {
                 </Link>
             </div>
         </div>
+        </div>
 
 
 
@@ -105,7 +107,7 @@ export default function NewMain() {
                 <div className='bc-row gap-24'>
                     <a className='bc-button' href='/bc-enroll'>Записаться</a>
                     <div className='bc-column'>
-                        <div className='bc-typography-body2'>520 бел. руб.<br/>в месяц</div>
+                        <div className='bc-typography-body2'>612 бел. руб./месяц<br/>Всего 1836 бел. руб.</div>
                     </div>      
                 </div>        
             </div>
@@ -120,12 +122,12 @@ export default function NewMain() {
             <div className='bc-column section-card'>
                 <div className='bc-row gap-16'>
                     <div className='sale-badge sale-badge-active'>
-                        <div className='bc-typography-body2'>До пн 31 окт</div>
-                        <div className='bc-typography-h1'>30%</div>
+                        <div className='bc-typography-body2'>До пн 14 ноя</div>
+                        <div className='bc-typography-h1'>−15%</div>
                     </div>
                     <div className='sale-badge'>
-                        <div className='bc-typography-body2'>До пн 14 ноя</div>
-                        <div className='bc-typography-h1'>15%</div>
+                        <div className='bc-typography-body2'>До 21 ноя</div>
+                        <div className='bc-typography-h1'>0%</div>
                     </div>
                 </div>
                 <div className='section-card-content  bc-column '>
@@ -177,30 +179,29 @@ export default function NewMain() {
             <div className='section-header'>
                 <h2>Уникально для курсов дизайна</h2>
             </div>
-            <div className='section-card'>
-            <img src={require('../assets/images/unique-01.jpg')} alt='Instagram'/>
-                <div className='section-card-content'>
-                    <h3>Работа с профилем Instagram</h3>
-                    <p>Вы напишете контент-план и будете публиковать свои работы.</p>
+                <div className='section-card'>
+                <img src={require('../assets/images/unique-01.jpg')} alt='Instagram'/>
+                    <div className='section-card-content'>
+                        <h3>Работа с профилем Instagram</h3>
+                        <p>Вы напишете контент-план и будете публиковать свои работы.</p>
+                    </div>
                 </div>
-            </div>
-            <div className='section-card'>
-                <img src={require('../assets/images/unique-02.jpg')} alt='Экран с кодом реакт-компонента'/>
-                <div className='section-card-content'>
-                    <h3>Обучение компьютерной вёрстке</h3>
-                    <p>Вы научитесь собирать несложные сайты своими руками.</p>
+                <div className='section-card'>
+                    <img src={require('../assets/images/unique-02.jpg')} alt='Экран с кодом реакт-компонента'/>
+                    <div className='section-card-content'>
+                        <h3>Обучение компьютерной вёрстке</h3>
+                        <p>Вы научитесь собирать несложные сайты своими руками.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div className='section-card'>
-            <img src={require('../assets/images/unique-03.jpg')} alt='Сертификат IBM'/>
-                <div className='section-card-content'>
-                    <h3>Сертификат IBM</h3>
-                    <p>В программу входит курс IBM «Дизайн-мышление в корпорации». Сертификат подходит для LinkedIn.</p>
+                <div className='section-card'>
+                <img src={require('../assets/images/unique-03.jpg')} alt='Сертификат IBM'/>
+                    <div className='section-card-content'>
+                        <h3>Сертификат IBM</h3>
+                        <p>В программу входит курс IBM «Дизайн-мышление в корпорации». Сертификат подходит для LinkedIn.</p>
+                    </div>
                 </div>
             </div>
-
-        </div>
 
 
 {/*Процесс обучения*/}
@@ -297,9 +298,11 @@ export default function NewMain() {
                 <h4 className='bc-typography-h4'>Сертификаты</h4>
                 <h2>2 сертификата</h2>
             </div>
+            <div className='certificate-box'>
             <div className='section-card-certificates bc-row gap-16'>
                     <img src={require('../assets/images/certificate-01.png')} alt='Сертификат Школы Кадола' width='300'/>
                     <img src={require('../assets/images/certificate-02.png')} alt='Сертификат IBM' width='300'/>
+            </div>
             </div>
         </div>
 
@@ -354,11 +357,11 @@ export default function NewMain() {
                 <div className='bc-row gap-16'>
                     <div className=' bc-column '>
                         <div className='bc-typography-body2 price-old'>720</div>
-                        <div className='bc-typography-h1'>520<span className='bc-typography-body'> р./мес.</span></div>
+                        <div className='bc-typography-h1'>612<span className='bc-typography-body'> р./мес.</span></div>
                     </div>
                     <div className='bc-column'>
-                        <div className='bc-typography-body2 price-future'>С пн 31 окт</div>
-                        <div className='bc-typography-h1 price-future'>612<span className='bc-typography-body'> р./мес.</span></div>
+                        <div className='bc-typography-body2 price-future'>С пн 14 ноя</div>
+                        <div className='bc-typography-h1 price-future'>720<span className='bc-typography-body'> р./мес.</span></div>
                     </div>
                 </div>
             </div>
@@ -374,7 +377,7 @@ export default function NewMain() {
                 </div>
                 <div className='bc-row list-item'>
                     <div className='list-item-title'>Общая стоимость</div>
-                    <div className='list-item-details'>1560 BYN</div>
+                    <div className='list-item-details'>1816 BYN</div>
                 </div>
             </div>
 
@@ -448,7 +451,7 @@ export default function NewMain() {
                         <div className='schedule-day'>Чт</div>
                         <div className='schedule-day schedule-day-disabled'>Пт</div>
                     </div>
-                    <div>19:00–20:45</div>
+                    <div>17:00–18:45</div>
                 </div>
                 <div className='section-card-content'>
                     <div className='bc-row bc-row-center gap-16 horizontal-center'>
