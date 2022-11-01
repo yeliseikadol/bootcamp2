@@ -377,7 +377,7 @@ export default function NewMain() {
                 </div>
                 <div className='bc-row list-item'>
                     <div className='list-item-title'>Общая стоимость</div>
-                    <div className='list-item-details'>1816 BYN</div>
+                    <div className='list-item-details'>1836 BYN</div>
                 </div>
             </div>
 
