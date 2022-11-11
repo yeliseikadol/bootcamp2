@@ -30,11 +30,11 @@ const[hasCertificate,setCertificate] = useState(false)
         
         <div className='section-card'>
             <div className='section-card-content bc-column input-container'>  
-                <label for='name' className='input-label'>Полное имя</label>
+                <label for='name' className='input-label'>Имя, Фамилия</label>
                 <input
                         name='name'
                         type='text'
-                        placeholder="Елена Петрова"
+                        placeholder=""
                         />
             </div>
         
@@ -43,7 +43,7 @@ const[hasCertificate,setCertificate] = useState(false)
             <input
                 name='telegram'
                 type='tel'
-                placeholder="@yeliseikadol"
+                placeholder="@nickname"
                 required
                 />
         </div>
@@ -96,7 +96,7 @@ const[hasCertificate,setCertificate] = useState(false)
         <input
                     name='product'
                     type='text'
-                    value={hasCertificate && hasPromocode?'payment30-3-4': hasCertificate?'payment30-3':hasPromocode?'payment30-4':'payment30'}
+                    value={hasCertificate && hasPromocode?'payment15-3-4': hasCertificate?'payment15-3':hasPromocode?'payment15-4':'payment15'}
                     hidden
                     />
 
