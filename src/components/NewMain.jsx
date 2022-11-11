@@ -175,18 +175,18 @@ export default function NewMain() {
 
 
 
-        <div className='section section-inverse'>
+        <div className='section section-inverse unique-for-courses'>
             <div className='section-header'>
                 <h2>Уникально для курсов дизайна</h2>
             </div>
-                <div className='section-card'>
-                <img src={require('../assets/images/unique-01.jpg')} alt='Instagram'/>
+                <div className='section-card unique-for-courses__instagram'>
+                    <img src={require('../assets/images/unique-01.jpg')} alt='Instagram'/>
                     <div className='section-card-content'>
                         <h3>Работа с профилем Instagram</h3>
                         <p>Вы напишете контент-план и будете публиковать свои работы.</p>
                     </div>
                 </div>
-                <div className='section-card'>
+                <div className='section-card unique-for-courses__code'>
                     <img src={require('../assets/images/unique-02.jpg')} alt='Экран с кодом реакт-компонента'/>
                     <div className='section-card-content'>
                         <h3>Обучение компьютерной вёрстке</h3>
@@ -194,7 +194,7 @@ export default function NewMain() {
                     </div>
                 </div>
 
-                <div className='section-card'>
+                <div className='section-card unique-for-courses__ibm'>
                 <img src={require('../assets/images/unique-03.jpg')} alt='Сертификат IBM'/>
                     <div className='section-card-content'>
                         <h3>Сертификат IBM</h3>
