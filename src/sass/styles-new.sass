@@ -52,28 +52,40 @@ $radius-6: 6px
 $white: #ffffff   
 $cool-90: #17191a
 $cool-80: #2b2d2e
+$cool-70: #404345
+$cool-60: #64696C
 $cool-50: #92999d
-$cool-40: #D0D7DB
-$cool-5: #EEF4F6
-$pink-50: #FF408A
-$pink-60: #D71E66
-$pink-70: #A20C47
+$cool-40: #B5BDC1
+$cool-30: #D0D7DB
+$cool-20: #E5EAED
+$cool-10: #EEF4F6
+$cool-5: #F8FDFF
+$pink-90: #1A010B
+$pink-80: #330216
+$pink-70: #600428
+$pink-60: #A20C47
+$pink-50: #D71E66
+$pink-40: #FF408A
+$pink-30: #FF74AF
+$pink-20: #FFB5D7
+$pink-10: #FFD4E8
+$pink-5: #FFF2F7
 $red-50: #F44040
 $green-10: #F3FDDB
 $yellow-10: #FFFCDB
-$pink-5: #FFF2F7
 $blue-5: #D4F0FF
 
 $text-primary: $cool-80
 $text-secondary: $cool-50
 $text-primary-inverse: $white
 $text-secondary-inverse: $cool-50
-$text-interactive: $pink-60
+$text-interactive: $pink-50
 $text-disabled: $cool-50
 
 $background-primary: $white
 $background-secondary: $cool-5
 $background-inverse: $cool-90
+$background-inverse-secondary: $cool-70
 $background-interactive: $pink-50
 $background-interactive-medium: $pink-60
 $background-interactive-strong: $pink-70
@@ -83,6 +95,7 @@ $background-accent-3: $pink-5
 $background-accent-4: $blue-5
 
 $border-primary: $cool-40
+$border-inverse-primary: $cool-60
 
 
 //typography
@@ -265,6 +278,7 @@ img
     text-decoration: none
     position: relative
     width: fit-content
+    color: $red-50
     &::after
         border-bottom: 1px solid $red-50
         content: ""
@@ -358,6 +372,33 @@ img
     height: 376px
     overflow-y: hidden
 
+.price-card
+    padding: $space-32 $space-24
+    margin: 0 -32px
+    border: 1px solid $border-inverse-primary
+    border-radius: $radius-6
+    &-accent
+        border: none
+        background: $background-inverse-secondary
+
+.price-sale
+    padding: $space-16
+    background: $background-accent-2
+    color: $text-primary
+    border-radius: $radius-4
+
+.curriculum-table 
+    gap: $space-32
+
+.curriculum-item
+    display: flex
+    flex-direction: column
+    padding-bottom: $space-32
+    border-bottom: 1px solid $border-primary
+    gap: $space-16
+    &:last-child
+        border-bottom: 0
+        padding-bottom: 0
 
 @media screen and (min-width: 901px)
     .layout
