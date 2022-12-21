@@ -2,19 +2,16 @@ import React, {useState} from 'react'
 
 export default function SeparatedForm() {   
 
-  
-const[hasPromocode,setPromocode] = useState(false)
-const[hasCertificate,setCertificate] = useState(false)
-
+const [tarifType, setTarifType] = useState("selfOwn")
 
   return (
     <div className='enroll-form section'>
         <a href='/'>Назад</a>
+
         <div className='section-header'>
-            
             <h4 className='bc-typography-h4'>Записаться</h4>
             <h2>Курс "Веб-дизайн для удалённой работы"</h2>
-            <p>Заполните форму и выберите время, которое вам подходит.</p>
+            <p>Выберите тариф и начинайте учиться.</p>
         </div>
 
       <form 
@@ -24,7 +21,6 @@ const[hasCertificate,setCertificate] = useState(false)
         data-netlify-honeypot="bot-field"
         onSubmit="submit"
         >
-
         <input type="hidden" name="form-name" value="contact" />
         <div hidden><input name="bot-field"/></div>
         
@@ -38,76 +34,79 @@ const[hasCertificate,setCertificate] = useState(false)
                         />
             </div>
         
-        <div className='section-card-content bc-column input-container'>
-            <label for='tel' className='input-label'>Профиль в Telegram для связи</label>
-            <input
-                name='telegram'
-                type='tel'
-                placeholder="@nickname"
-                required
-                />
-        </div>
-
-        <div className='section-card-content bc-column input-container'>
-            <label for='tel' className='input-label'>E-mail для доступа к книгам и оплаты</label>
-            <input
-                name='email'
-                type='email'
-                placeholder="mail@gmail.com"
-                required
-                />
-        </div>
+            <div className='section-card-content bc-column input-container'>
+                <label for='tel' className='input-label'>Профиль в Telegram для связи</label>
+                <input
+                    name='telegram'
+                    type='tel'
+                    placeholder="@nickname"
+                    required
+                    />
+            </div>
 
             <div className='section-card-content bc-column input-container'>
-            <label form='class' className='input-label'>Группа</label>
-            <select
-                name='class'
-                placeholder="Выберите группу"
-                required>
-                  <option value='Оксана, 21.11 — 10.02, вт и чт с 19:00'>Оксана (21 ноя — 10 фев; Вт, Чт 19:00)</option>
-                  <option value='Елисей, 21.11 — 10.02, пн и ср с 17:00'>Елисей (21 ноя — 10 фев; Пн, Ср 17:00)</option>
-            </select>
-        </div>
-
-        <div className='checkbox-group'>
-        <div className='checkbox-label' onClick={()=>setCertificate(!hasCertificate)}><i className={hasCertificate?'checkbox checkbox-checked':'checkbox'}/><div>У меня есть сертификат других курсов</div></div>
-        </div>
-
-        <input
-                    name='certificate'
-                    type='text'
-                    value={hasCertificate?'есть сертификат':null}
-                    hidden
+                <label for='tel' className='input-label'>E-mail для доступа к книгам и оплаты</label>
+                <input
+                    name='email'
+                    type='email'
+                    placeholder="mail@gmail.com"
+                    required
                     />
+            </div>
 
-        <div className='checkbox-group'>
-        <div className='checkbox-label' onClick={()=>setPromocode(!hasPromocode)}><i className={hasPromocode?'checkbox checkbox-checked':'checkbox'}/><div>У меня есть промокод</div></div>
-        { hasPromocode ?<div className='section-card-content bc-column input-container promocode-block'>
-            <input
-                    name='promocode'
-                    type='text'
-                    placeholder="Введите промокод"
-                    />
-            </div>:null
-        }
+            <label for='tel' className='input-label'>Тариф</label>
+            <div className='bc-row bc-radio gap-8'
+              onClick={() => {
+                setTarifType("selfOwn");
+            }}
+            >
+              
+              <input
+                type="radio"
+                value={tarifType}
+                name="class"
+                checked={tarifType == "selfOwn"}
+              />
+              Самостоятельный
+            </div>
+            <div className='bc-row bc-radio gap-8' onClick={() => {
+              setTarifType("fullAccess");
+            }}>
+              <input
+                type="radio"
+                value={tarifType}
+                name="class"
+                checked={tarifType == "fullAccess"}
+              />
+              Полный доступ
+            </div>
+            <div className='bc-row bc-radio gap-8' onClick={() => {
+              setTarifType("group");
+            }}>
+              <input
+                type="radio"
+                value={tarifType}
+                name="class"
+                checked={tarifType == "group"}
+              />
+              В группе с Елисеем
+            </div>
         </div>
+
+
+
+
+        <div className='flex-column enroll-sum'>
+          <div className='typography-h3'>{tarifType === "selfOwn" ? "Ежемесячный платеж: 280 руб." : tarifType === "fullAccess" ? "Ежемесячный платеж: 350 руб." : "Ежемесячный платеж: 560 руб."}</div>
+          <div className='typography-body2'>{tarifType === "group" ? "Ссылка на оплату придёт на почту." : "Первый платёж через 2 недели после начала обучения. Ссылка на оплату придёт на почту."}</div>
         </div>
 
-        <input
-                    name='product'
-                    type='text'
-                    value={hasCertificate && hasPromocode?'payment15-3-4': hasCertificate?'payment15-3':hasPromocode?'payment15-4':'payment15'}
-                    hidden
-                    />
-
-
-        <div className='flex-column enroll-sum'><div className='typography-h3'>К оплате: {hasCertificate && hasPromocode ? '468 BYN':hasCertificate?'540 BYN':hasPromocode?'540 BYN':'612 BYN'}</div>
-
-        <div className='typography-body2'>Ссылка на оплату придёт на почту.</div></div>
         <button className='bc-button' type='submit'>
             Записаться
         </button>
+
       </form>
+
     </div>
   )
 }
