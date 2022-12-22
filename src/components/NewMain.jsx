@@ -533,7 +533,7 @@ export default function NewMain() {
                         <div className='schedule-day'>Чт</div>
                         <div className='schedule-day schedule-day-disabled'>Пт</div>
                     </div>
-                    <div>17:00–18:45</div>
+                    <div>18:30–20:00</div>
                 </div>
                 <div className='section-card-content'>
                     <div className='bc-row bc-row-center gap-16 horizontal-center'>

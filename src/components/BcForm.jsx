@@ -65,7 +65,7 @@ const [tarifType, setTarifType] = useState("selfOwn")
                 type="radio"
                 value={tarifType}
                 name="class"
-                checked={tarifType == "selfOwn"}
+                checked={tarifType === "selfOwn"}
               />
               Самостоятельный
             </div>
@@ -76,7 +76,7 @@ const [tarifType, setTarifType] = useState("selfOwn")
                 type="radio"
                 value={tarifType}
                 name="class"
-                checked={tarifType == "fullAccess"}
+                checked={tarifType === "fullAccess"}
               />
               Полный доступ
             </div>
@@ -87,7 +87,7 @@ const [tarifType, setTarifType] = useState("selfOwn")
                 type="radio"
                 value={tarifType}
                 name="class"
-                checked={tarifType == "group"}
+                checked={tarifType === "group"}
               />
               В группе с Елисеем
             </div>
