@@ -412,7 +412,7 @@ export default function NewMain() {
                     <div>
                         <div>2 недели бесплатно</div>
                         <div>Лекции + Задания</div>
-                        <div>Проверка заданий</div>
+                        <div>Без проверки заданий</div>
                     </div>
                     <a href='/bc-enroll' className='bc-button'>Записаться</a>
                 </div>
@@ -421,14 +421,14 @@ export default function NewMain() {
                     <div className='bc-column gap-16'>
                         <div className='bc-typography-h3'>Полный доступ</div>
                         <div>
-                            <div className='bc-typography-body1'><span className='price-old'>1&nbsp;500</span> 1&nbsp;050 рублей</div>
-                            <div className='bc-typography-h2'>350 р./месяц</div>
+                            <div className='bc-typography-body1'><span className='price-old'>1&nbsp;800</span> 1&nbsp;380 рублей</div>
+                            <div className='bc-typography-h2'>460 р./месяц</div>
                         </div>
                     </div>
                     <div>
                         <div>2 недели бесплатно</div>
                         <div>Лекции + Задания</div>
-                        <div>Проверка заданий</div>
+                        <div>+ Проверка заданий</div>
                         <div>+ Общий чат</div>
                         <div>+ Мастер-классы</div>
                     </div>
@@ -441,15 +441,15 @@ export default function NewMain() {
                         <div>
                         <div className='bc-typography-body1'><span className='price-old'>2&nbsp;400</span> 1&nbsp;680 рублей</div>
                             <div className='bc-typography-h2'>560 р./месяц</div>
-                            
                         </div>
                     </div>
                     <div>
+                        <div>2 недели бесплатно</div>
                         <div>Лекции + Задания</div>
                         <div>Проверка заданий</div>
-                        <div>+ Общий чат</div>                        
-                        <div>+ Мастер-классы</div>
-                        <div>+ Чат группы с&nbsp;Елисеем</div>
+                        <div>Общий чат</div>                        
+                        <div>Мастер-классы</div>
+                        <div>+ Чат с&nbsp;Елисеем</div>
                         <div>+ Практика 2 раза в&nbsp;неделю в&nbsp;группе</div>
                         <div>+ Персональная помощь с&nbsp;карьерой</div>
                     </div>
